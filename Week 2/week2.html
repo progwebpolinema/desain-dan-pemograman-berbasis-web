@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Introduction to HTML</title>
+    <meta name="description" content="Materi pengenalan awal tentang HTML.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../webppt/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../webppt/static/css/svg-icons.css">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <section class="bg-apple aligncenter" id="main">
+          <div class="wrap">
+            <h1 class="text-data">HTML 101</h1>
+            <h4 class="text-subtitle">Introduction to HTML</h4>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="outlines">
+          <div class="wrap size-50">
+            <h1>Outlines</h1>
+            <ol class="text-cols">
+              <li class="text-intro">Pengenalan HTML</li>
+              <li class="text-intro">Memuat Gambar</li>
+              <li class="text-intro">Membuat Link</li>
+              <li class="text-intro">Headings / Penjudulan</li>
+              <li class="text-intro">Membuat List / Daftar</li>
+              <li class="text-intro">Memahami Tag DIV</li>
+              <li class="text-intro">Form Pada HTML</li>
+              <li class="text-intro">Tabel Pada HTML</li>
+              <li class="text-intro">Web Programming</li>
+              <li class="text-intro">Studi Kasus</li>
+            </ol>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide3">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Apa itu HTML ?</h2>
+              <ol>
+                <li>
+                  Singkatan dari <em>Hypertext Markup Language</em>
+                </li>
+                <li>
+                  Dikenal sebagai bahasa <em>markup</em> atau <em>formating language</em> ditandai dengan penggunaan <em>tag</em> untuk meng-markup konten didalamnya<br/>
+                  Contoh : <code>&lt;html&gt;&lt;/html&gt;</code>
+                </li>
+                <li>
+                  Setiap tag pasti berpasangan, pembuka (<code>&lt;html&gt;</code>) dan penutup (<code>&lt;html&gt;</code>). Penutup tag ditandai dengan "<b>/</b> " pada bagian depan nama tag
+                </li>
+                <li>
+                  HTML Language != Programming Language, why ?
+                </li>
+              <ol>
+            </div>
+            <div class="column">
+              <figure>
+                <img src="../webppt/static/images/inspect.png">
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide4">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Practice Makes Perfect!</h2>
+                <p class="text-intro">Write down your first HTML code!</p>
+                <ol>
+                  <li>Buka text editor. Ex: Notepad</li>
+                  <li>Tulis kode HTML disamping</li>
+                  <li>Save as html. Ex: <code>kodeku.html</code></li>
+                  <li>Buka kode tersebut dengan menggunakan web browser</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+<span class="code-comment">&lt;!-- Comment Tag --&gt;</span>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+    &lt;p&gt;your name&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide5">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../webppt/static/images/firstcode.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide6">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Struktur HTML</h2>
+                <ol>
+                  <li><code>&lt;!DOCTYPE html&gt;</code><br/>Menginformasikan kepada browser bahwa dokumen merupakan dokumen HTML</li>
+                  <li><code>&lt;html&gt;..&lt;/html&gt;</code><br/>Inisiasi awal dokumen HTML. Seluruh dokumen html harus diawali dan ditutup dengan tag ini</li>
+                  <li><code>&lt;head&gt;..&lt;/head&gt;</code><br/>Digunakan untuk menyimpan informasi berkaitan dengan dokumen HTML. Contoh : penggunaan tag <code>&lt;title&gt;&lt;/title&gt;</code> untuk memberikan judul pada dokumen HTML. <b>Informasi yang ada dalam markup <code>&lt;head&gt;..&lt;/head&gt;</code> tidak akan ditampilkan</b></li>
+                  <li><code>&lt;body&gt;..&lt;/body&gt;</code><br/>Merupakan bagian utama dari dokumen HTML dan digunakan untuk menyimpan semua konten HTML yang akan ditampilkan ke dalam Browser</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+  <span class="code-comment">&lt;!-- Comment Tag --&gt;</span>
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Ini Judul&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+   Ini body
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </pre>
+              </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide7">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Atribut HTML</h2>
+                <ol>
+                  <li>Atribut merupakan bagian yang melekan pada setiap tag HTML</li>
+                  <li>Atribut digunakan untuk menyimpan informasi tambahan atau opsi berkaitan dengan tag tersebut</li>
+                  <li>Contoh pada tag <code>&lt;img&gt;</code> terdapat atribut <code>src</code>yang digunakan untuk menyimpan informasi lokasi <em>image</em></li>
+                  <li>Lihat <em>code snippet </em>di samping</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Atribut HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body
+ &lt;img src="inigambarku.png" /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide8">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Memuat Gambar #1</h2>
+                <ol>
+                  <li>Diperlukan <strong>minimal</strong> tag <code>&lt;img /&gt;</code> dengan atribut <code>src</code> untuk menampilkan gambar pada dokumen HTML</li>
+                  <li>Terdapat atribut lain yang dapat digunakan pada tag <code>&lt;img /&gt;</code> seperti <code>alt</code>, <code>hight</code>, <code>widht</code></li>
+                  <li>Atribut <code>alt</code> digunakan untuk memberikan alternatif tampilan teks jika gambar gagal ditampilkan oleh browser</li>
+                  <li><code>height</code> digunakan untuk mengatur panjang dari gambar dan <code>widht</code> untuk mengatur lebar dari gambar. Ukuran yang digunakan dalam satuan pixel (px)</li>
+                  <li style="color:red"><strong>NOTE : Jika pada tag <code>&lt;img /&gt;</code> tidak menggunakan opsi atribut <code>heigh</code> dan/atau <code>widht</code>, maka gambar akan dimuat dengan menggunakan ukuran asli</strong></li>
+                  <li>Praktikkan dengan menulis kode di samping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Load Image in HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body
+  &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+  &lt;p&gt;your name&lt;/p&gt;
+  &lt;img src="img.png" alt="Ini gambarku" widht="240" hight="320" /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide9">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../webppt/static/images/imgcode.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide10">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Memuat Gambar #2</h2>
+                <p>Pada Memuat Gambar #1, gambar yang dimuat masih dalam satu direktor atau folder. Bagaimana jika berada pada direktori yang berbeda ?<br/><br/><br/><h3>Harus dituliskan alamat url atau path</h3></p>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Load Image in HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body
+  &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+  &lt;p&gt;your name&lt;/p&gt;
+  <span class="code-comment">&lt;!-- Gambar Disimpan Pada Direktori /image --&gt;</span>
+  &lt;img src="images/img2.png" alt="gambar berbeda direktori" widht="240" hight="320" /&gt;
+  <span class="code-comment">&lt;!-- Gambar Dari Web --&gt;</span>
+  &lt;img src="http://thn-st2.azureedge.net/thn-uploads/2018/02/Spaceman-1024x576.jpg" alt="gambar berbeda direktori" widht="240" hight="320" /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide11">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../webppt/static/images/imgcode2.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide12">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Membuat Tautan / Link</h2>
+                <p class="text-intro"> Klik <a href="#">disini</a> untuk mendownload ?</p>
+                <ol>
+                  <li>Untuk membuat sebuah tautan diperlukan tag <code>&lt;a&gt;&lt;/a&gt;</code></li>
+                  <li>Diperlukan juga atribut <code>href</code> untuk menyimpan informasi url yang akan dituju</li>
+                  <li>Teknik penulisan Path atau URL dalam <code>href</code> serupa dengan <code>src</code></li>
+                  <li>Terdapat juga atribut <code>target="_blank"</code> untuk membuka tautan pada window atau tab yang baru</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Links in HTMLL&lt;/title&gt;
+&lt;/head&gt;
+&lt;body
+  &lt;h1&gt;Create Some Links&lt;/h1&gt;
+  <span class="code-comment">&lt;!-- Link Pada File HTML tertentu --&gt;</span>
+  &lt;a href="file2.html"&gt;Menuju File 2&lt;/a&gt;
+  <span class="code-comment">&lt;!-- Membuka Tautan Web --&gt;</span>
+  &lt;a href="http://polinema.ac.id"&gt;Menuju Web Polinema&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide13">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Membuat Penjuduluan / Headings</h2>
+                <p>Headings dapat di analogikan sebagai Bab dan Subab pada tata cara penulisan. Terdapat 6 level atau tingkatan pada heading, yaitu :</p>
+                <ol>
+                  <li><code>&lt;h1&gt;&lt;/h1&gt;</code> Heading Lv 1</li>
+                  <li><code>&lt;h2&gt;&lt;/h2&gt;</code> Heading Lv 2</li>
+                  <li><code>&lt;h3&gt;&lt;/h3&gt;</code> Heading Lv 3</li>
+                  <li><code>&lt;h4&gt;&lt;/h4&gt;</code> Heading Lv 4</li>
+                  <li><code>&lt;h5&gt;&lt;/h5&gt;</code> Heading Lv 5</li>
+                  <li><code>&lt;h6&gt;&lt;/h6&gt;</code> Heading Lv 6</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Load Image in HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body
+  &lt;h1&gt;Ini Heading Lv. 1&lt;/h1&gt;
+  &lt;h2&gt;Ini Heading Lv. 2&lt;/h2&gt;
+  &lt;h3&gt;Ini Heading Lv. 3&lt;/h3&gt;
+  &lt;h4&gt;Ini Heading Lv. 4&lt;/h4&gt;
+  &lt;h5&gt;Ini Heading Lv. 5&lt;/h5&gt;
+  &lt;h6&gt;Ini Heading Lv. 6&lt;/h6&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide14">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../webppt/static/images/headings.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide15">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Membuat List #1</h2>
+                <p>List merupakan tag yang digunakan untuk membuat sebuah daftar. Terdapat 3 jenis list dalam HTML, yaitu Ordered List <code>&lt;ol&gt;&lt;/ol&gt;</code>, Unordered List <code>&lt;ul&gt;&lt;/ul&gt;</code>, dan Data List <code>&lt;dl&gt;&lt;/dl&gt;</code></p>
+                <ol>
+                  <li><code>&lt;ol&gt;&lt;/ol&gt;</code> digunakan untuk membuat daftar dengan penomoran otomatis</li>
+                  <li><code>&lt;ul&gt;&lt;/ul&gt;</code> digunakan untuk membuat daftar dengan tanpa penomoran, namun menggunakan penanda <em>bullet</em></li>
+                  <li><code>&lt;dl&gt;&lt;/dl&gt;</code> tipe daftar / list khusus yang dapat digunakan seperti untuk membuat daftar istilah pada kamus</li>
+                  <li>Setelah menginsiasi jenis list yang digunakan, untuk memasukkan daftar item kedalam list tersebut digunakan tag <code>&lt;li&gt;&lt;/li&gt;</code> didalam tag list</li>
+                  <li>Perhatikan contoh pada code snippet disamping</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Ordered and Unordered List&lt;/title&gt;
+&lt;/head&gt;
+&lt;body
+  &lt;ol&gt;
+    &lt;li&gt;Ordered list item 1&lt;/li&gt;
+    &lt;li&gt;Ordered list item 2&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Unordered list item 1&lt;/li&gt;
+    &lt;li&gt;Unordered list item 2&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide16">
+          <div class="wrap size-50">
+            <h2>Contoh</h2>
+            <figure>
+              <img src="../webppt/static/images/list1.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide17">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Membuat List #2</h2>
+                <p>List juga dapat digunakan dalam bentuk bersarang (<em>nested</em>). Untuk melakukan hal ini cukup memasukkan tag <code>&lt;ol&gt;&lt;/ol&gt;</code> atau <code>&lt;ul&gt;&lt;/ul&gt;</code> kedalam tag list yang sebelumnya dibuat</p>
+              </div>
+              <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Nasted List&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;ol&gt;
+      &lt;ol&gt;
+        &lt;li&gt;1nd Child&lt;/li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;2nd Child&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/ol&gt;
+  &lt;/ol&gt;
+  &lt;ul&gt;
+      &lt;ul&gt;
+        &lt;li&gt;1nd Child&lt;/li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;2nd Child&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/ul&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+              </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide18">
+          <div class="wrap size-50">
+            <h2>Contoh</h2>
+            <figure>
+              <img src="../webppt/static/images/list2.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide19">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan HTML</p>
+                <h2 class="text-context">Apa itu tag <code>div</code> #1</h2>
+                <p><code>div</code> dalam HTML merupakan singkatan dari <em>division</em> atau bagian. Dalam struktur <code>body</code> dalam HTML biasa dibagi menjadi beberapa bagian seperti header, content, sidebar, dan footer</p>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../webppt/static/images/structure.jpg">
+                </figure>
+                <h5></h5>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide20">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Apa itu tag <code>div</code> #2</h2>
+              <p>Struktur pada bagian Apa itu tag <code>div</code> #1, dapat diterapkan menjadi kode pada code snippet</p>
+            </div>
+            <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;The DIV&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="header"&gt;
+  Header
+&lt;/div&gt;
+&lt;div id="navigation"&gt;
+  Navigation
+&lt;/div&gt;
+&lt;div id="main-content"&gt;
+  Main Content
+&lt;/div&gt;
+&lt;div id="r-sidebar"&gt;
+  Right Sidebar
+&lt;/div&gt;
+&lt;div id="footer"&gt;
+  Footer
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide21">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">ID vs Class</h2>
+              <p>Id dan class merupakan atribut yang ada pada setiap elemen atau tag HTML. Apa perbedaan keduanya ?</p>
+              <ol>
+                <li>Id digunakan untuk berikan pengenal pada tag HTML. Id bersifat <span style="text:bold;color:red">UNIQUE</span>, sehingga tidak boleh ada 2 tag dengan Id yang sama</li>
+                <li>Class digunakan untuk tag HTML dengan karateristik yang sama</li>
+                <li>Id dan Class dapat digunakan sebagai penanda pada saat melakukan <em>styling</em> dengan menggunakan CSS (dibahas selanjutnya)</li>
+                <li>Id dapat digunakan sebagai penanda manipulasi data maupun tag dengan menggunakan JavaScript (JS)</li>
+              </ol>
+            </div>
+            <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;The DIV&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="header"&gt;
+  Header
+&lt;/div&gt;
+&lt;div id="navigation"&gt;
+  Navigation
+&lt;/div&gt;
+&lt;div id="main-content"&gt;
+  &lt;div class="blok"&gt;
+  &lt;/div"&gt;
+  &lt;div class="blok"&gt;
+  &lt;/div"&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide22">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Parent, Child, Sibling</h2>
+              <p class="text-intro">Apa hubungan ketiganya ?</p>
+              <ol>
+                <li><code>&lt;div id="wrap"&gt;</code> merupakan induk dari dari tag-tag yang ada didalamnya, sehingga dapat disebut sebagai <code>parent</code></li>
+                <li><code>&lt;div id="main-content"&gt;</code> merupakan <code>child</code> dari <code>&lt;div id="wrap"&gt;</code> karena berada didalam tag <code>&lt;div id="wrap"&gt;</code>. Namun <code>&lt;div id="main-content"&gt;</code> juga sebagai <code>parent</code> bagi <code>&lt;div id="content"&gt;</code> dan <code>&lt;div id="sidebar"&gt;</code> karena keduanya terdapat didalamnya</li>
+                <li><code>&lt;div id="content"&gt;</code> dan <code>&lt;div id="sidebar"&gt;</code> merupakan <code>sibling karena berada pada tingkatan yang sama</code></li>
+              </ol>
+            </div>
+            <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;The DIV&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="wrap"&gt;
+  &lt;div id="main-content"&gt;
+    &lt;div class="blok"&gt;&lt;/div"&gt;
+    &lt;div class="blok"&gt;&lt;/div"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide23">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Form #1</h2>
+              <p>Banyakan formulir yang biasa kalian jumpai di kehidupan sehari-sahari, pasti terdapat beberapa elemen yang ada didalamnya. Begitu juga form pada HTML, terdapat elemen-elemen yang diwakili oleh tag. Untuk memulai menggunakan elemen dalam form, maka terlebih dahulu digunakan tag <code>&lt;form&gt;&lt;/form&gt;</code>.Beberapa contoh tag dalam form HTML adalah,</p>
+              <ol>
+                <li>Label</li>
+                <li>Text</li>
+                <li>Text Area</li>
+                <li>Radio Button</li>
+                <li>Combo Box</li>
+                <li>Tombol submit</li>
+                <li>dsb</li>
+              </ol>
+            </div>
+            <div class="column">
+              <figure>
+                <img src="../webppt/static/images/form-anotate.png">
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide24">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Form #2</h2>
+              <p class="text-intro">Latihan</p>
+              <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;The DIV&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Data Mahasiswa&lt;/h2&gt;
+&lt;form&gt;
+  &lt;label&gt;Nama :&lt;/label&gt;
+  &lt;input type="text" name="nama"/&gt;&lt;br/&gt;
+  &lt;label&gt;Jenis Kelamin :&lt;/label&gt;
+  &lt;input type="radio" name="jk" value="laki-laki" /&gt;Laki-Laki&lt;span&gt;&lt;/span&gt;
+  &lt;input type="radio" name="jk" value="perempuan" /&gt;&lt;br/&gt;
+  &lt;label&gt;Alamat :&lt;/label&gt;
+  &lt;textarea&gt;&lt;/textarea&gt;&lt;br/&gt;
+  &lt;label&gt;Asal Sekolah :&lt;/label&gt;
+  &lt;select name="sekolah"&gt;
+    &lt;option&gt;SMAN 1 Malang&lt;/option&gt;
+    &lt;option&gt;SMAN 2 Malang&lt;/option&gt;
+    &lt;option&gt;SMAN 3 Malang&lt;/option&gt;
+  &lt;/select&gt;&lt;br/&gt;
+  &lt;input type="submit" value="Simpan"/&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide25">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Tabel #1</h2>
+              <p class="text-intro">Bagaimana cara membuat tabel ?</p>
+              <ol>
+                <li>Untuk membuat sebuah tabel diperlukan tag <code>&lt;table&gt;&lt;/table&gt;</code></li>
+                <li>Didalam sebuah tabel tentunya terdapat baris dan kolom. <code>&lt;tr&gt;&lt;/tr&gt;</code> digunakan untuk membuat baris, sedangkan <code>&lt;td&gt;&lt;/td&gt;</code> digunakan untuk membuat kolom</li>
+              </ol>
+            </div>
+            <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Table&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table border="1"&gt;
+  <span class="code-comment">&lt;!-- Baris Pertama --&gt;</span>
+  &lt;tr&gt;
+    &lt;td&gt;NIM&lt;/td&gt;
+    &lt;td&gt;Nama&lt;/td&gt;
+    &lt;td&gt;Jenis Kelamin&lt;/td&gt;
+  &lt;/tr&gt;
+  <span class="code-comment">&lt;!-- Baris Kedua --&gt;</span>
+  &lt;tr&gt;
+    &lt;td&gt;NIM&lt;/td&gt;
+    &lt;td&gt;Nama&lt;/td&gt;
+    &lt;td&gt;Jenis Kelamin&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide26">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../webppt/static/images/table1.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide27">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Tabel #2</h2>
+              <p class="text-intro">Struktur yang dianjurkan</p>
+              <ol>
+                <li>Tabel tentunya mempunyai <em>header</em> untuk meberikan nama pada setiap kolom. Untuk membuatnya digunakan tag <code>&lt;thead&gt;&lt;/thead&gt;</code></li>
+                <li>Untuk badan tabel, dimana berisi informasi atau data, digunakan <code>&lt;tbody&gt;&lt;/tbody&gt;</code></li>
+                <li>Terdapat tag <code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> untuk memberikan informasi tambahan pada bagian bawah tabel</li>
+              </ol>
+            </div>
+            <div class="column">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Table&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table border=1&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;td&gt;NIM&lt;/td&gt;
+        &lt;td&gt;Nama&lt;/td&gt;
+        &lt;td&gt;Jenis Kelamin&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;5210100016&lt;/td&gt;
+        &lt;td&gt;Muhammad Afif Hendrawan&lt;/td&gt;
+        &lt;td&gt;Laki-laki&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+      &lt;tr&gt;
+        &lt;th colspan="3"&gt;Politeknik Negeri Malang&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/tfoot&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide28">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../webppt/static/images/table2.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide29">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Studi Kasus</h2>
+              <p class="text-intro">Buat struktur layout untuk desain dibawah ini</p>
+              <figue>
+                <img src="../webppt/static/images/studycase1.png">
+                <h6></h6>
+              </figue>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide30">
+          <div class="wrap size-50">
+            <h2>Berhasil ? atau ?</h2>
+            <figure>
+              <img src="../webppt/static/images/studycase2.png">
+            </figure>
+          </div>
+        </section>
+        <section class="bg-apple aligncenter" id="slide31">
+          <div class="wrap size-50 aligncenter">
+            <h3 class="text-intro">All We need is some styling !</h3><br /><br /><br /><br />
+            <h1 style="font-size:10em">CSS</h1>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide32">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Web Programming</h2>
+              <p class="text-intro">Beberapa bahasa pemograman yang dapat digunakan untuk membangun aplikasi berbasis web</p>
+              <ol style="font-size:1.25em">
+                <li>PHP</li>
+                <li>JavaScript (JS)</li>
+                <li>JavaServer Pages (JSP)</li>
+                <li>Active Server Pages (ASP.NET)</li>
+                <li>Python</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide33">
+          <div class="wrap">
+            <p class="text-subtitle">Pengenalan HTML</p>
+            <h2 class="text-context">Battleground</h2>
+            <p class="text-intro">Modal Berlatih dan Belajar</p>
+            <ol style="font-size:1.25em">
+              <li><a href="https://www.w3schools.com/html/">W3 School</a></li>
+              <li><a href="https://www.codecademy.com/learn">Codecademy</a></li>
+              <li><a href="https://www.udacity.com/course/intro-to-html-and-css--ud001">Udacity</a></li>
+            </ol>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide34">
+          <span class="aligncenter text-intro" style="font-size:7em">Pertanyaan ?</span>
+        </section>
+      </article>
+
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../webppt/static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../webppt/static/js/svg-icons.js"></script>
+
+  </body>
+</html>
