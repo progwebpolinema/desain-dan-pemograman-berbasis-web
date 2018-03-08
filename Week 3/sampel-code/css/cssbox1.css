@@ -1,0 +1,9 @@
+.box {
+  background-color:blue;
+  color:white;
+  /* Ukuran Box */
+  width:100px;
+  height:100px;
+  /* Margin Bawah Antar Box */
+  margin-bottom:20px;
+}

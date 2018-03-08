@@ -1,0 +1,30 @@
+#box1 {
+  background: url('../img/logopolinema.png');
+  /* Ukuran Gambar */
+  background-size: 36px 45px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  width: 150px;
+  height: 150px;
+}
+
+#box2 {
+  background: url('../img/logopolinema.png');
+  /* Ukuran Gambar */
+  background-size: 36px 45px;
+  background-repeat: repeat-x;
+  background-position: 5px 5px;
+  background-color: black;
+  width: 150px;
+  height: 150px;
+}
+
+#box3 {
+  background: url('../img/logopolinema.png');
+  /* Ukuran Gambar */
+  background-size: 36px 45px;
+  background-repeat: repeat-y;
+  background-position: 5px 5px;
+  width: 150px;
+  height: 150px;
+}

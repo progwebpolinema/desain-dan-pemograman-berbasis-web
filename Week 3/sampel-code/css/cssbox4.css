@@ -1,0 +1,15 @@
+.box {
+  background-color:pink;
+  color:black;
+  /* Ukuran Box */
+  width:100px;
+  height:100px;
+  /* Margin */
+  margin-bottom:10px;
+  /* Padding */
+  padding-left:5px;
+  /* Border */
+  border-color:black;
+  border-style:solid; /* ada banyak style */
+  border-width:2px;
+}

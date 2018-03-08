@@ -1,0 +1,12 @@
+.box {
+  background-color:green;
+  color:yellow;
+  /* Ukuran Box */
+  width:100px;
+  height:100px;
+  /* Margin Bawah Antar Box */
+  margin-left:20px;
+  margin-top:10px;
+  margin-right:20px;
+  margin-bottom:50px;
+}

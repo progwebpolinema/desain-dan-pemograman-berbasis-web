@@ -1,0 +1,13 @@
+.div1 h1 {
+  color:black;
+  background-color: white;
+}
+
+.div2 h1 {
+  color:white;
+  background-color: black;
+}
+
+#par {
+  text-decoration: underline;
+}

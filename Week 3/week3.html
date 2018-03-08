@@ -1,0 +1,1220 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Introduction to CSS</title>
+    <meta name="description" content="Materi Pengenalan Awal Tentang CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Week 3/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Week 3/static/css/svg-icons.css">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    <style>
+      .element {
+        height: 250px;
+        width: 250px;
+        margin: 0 auto;
+        background-color: red;
+        animation-name: stretch;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+      }
+
+      @keyframes stretch {
+        0% {
+          transform: scale(.3);
+          background-color: red;
+          border-radius: 100%;
+        }
+        50% {
+          background-color: orange;
+        }
+        100% {
+          transform: scale(1.5);
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <section class="bg-apple aligncenter" id="main">
+          <div class="wrap">
+            <h1 class="text-data">CSS 101</h1>
+            <h4 class="text-subtitle">Introduction to CSS</h4>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="outlines">
+          <div class="wrap size-50">
+            <h1>Outlines</h1>
+            <ol class="text-cols">
+              <li class="text-intro">Pengertian CSS</li>
+              <li class="text-intro">Komponen CSS</li>
+              <li class="text-intro">Box Model</li>
+              <li class="text-intro">Typography</li>
+              <li class="text-intro">CSS Image</li>
+              <li class="text-intro">Floating</li>
+              <li class="text-intro">Positioning</li>
+              <li class="text-intro">Studi Kasus</li>
+            </ol>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide3">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan CSS</p>
+              <h2 class="text-context">Apa itu CSS ?</h2>
+              <ol>
+                <li>
+                  Singkatan dari <em>Cascading Style Sheet</em>
+                </li>
+                <li>
+                  Digunakan untuk mendefinisikan bagaimana HTML akan di presentasikan. Boleh dikatakan, digunakan untuk mempercantik tampilan HTML
+                </li>
+                <li>
+                  Apakah CSS hanya tentang <em>styling</em> ?
+                </li>
+              <ol>
+            </div>
+            <div class="column">
+              <figure>
+                <img src="../Week 3/static/images/html-css.jpg">
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide4">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class=column>
+                <h2>Are you sure ?</h2>
+                <p class="text-intro">Kita dapat membuat animasi dengan menggunakan CSS. Thanks to CSS3</p>
+              </div>
+              <div class="column">
+                <div class=element></div>
+                <br />
+                <p class="aligncenter" style="font-size:0.2em">Copyright <a href="https://css-tricks.com/almanac/properties/a/animation/">CSS-Tricks</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide5">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Komponen CSS ? #1</h2>
+                <p class="text-intro">Apa saja komponen utama pada CSS?</p>
+                <ol>
+                  <li>
+                    Terdiri dari 3 komponen utama, <code>Selector</code>, <code>Property</code>, dan <code>Value</code>.
+                  </li>
+                  <li>
+                    <code>Selector</code> digunakan sebagai penanda elemen/tag HTML yang akan di-<em>styling</em>. <code>Selector</code> dapat digunakan langsung pada tag HTML atau spesifik pada ID atau Class
+                  </li>
+                  <li>
+                    Simbol <em>hashtag</em> <code>#</code> digunakan oleh <code>selector</code> untuk merujuk pada ID terntentu. Sedangkan simbol titik <code>.</code> digunakan untuk class.
+                  </li>
+                  <li>
+                    <code>h1</code>, <code>#judul</code>, dan <code>.title</code> merupakan contoh <code>selector</code>
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 3/static/images/css1.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide6">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Komponen CSS ? #2</h2>
+                <p class="text-intro">Apa itu <code>font-size</code> dan <code>20px</code> ?</p>
+                <ol>
+                  <li>
+                    <code>font-size</code> adalah sebuah <code>property</code> yang memberikan sifat-sifat dari selector. Sifat dapat bermacam-macam, seperti warna font, ukuran font, jarak antar elemen, garis, dsb
+                  </li>
+                  <li>
+                    <code>20px</code> adalah nilai dari <code>property</code> yang kita gunakan
+                  </li>
+                  <li>
+                    <code>property</code> dan <code>value</code> dipisahkan oleh simbol titik dua <code>:</code> dan setiap inisiasi <code>property</code> harus diakhiri dengan simbol titik koma <code>;</code>
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 3/static/images/css1.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide6">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Komponen CSS ? #3</h2>
+                <p class="text-intro">Bagimana jika banyak komponen sekaligus ?</p>
+                <ol>
+                  <li>
+                    Kita dapat menggabungkan beberapa elemen dalam satu <code>selector</code>
+                  </li>
+                  <li>
+                    Perhatikan code snippet di samping !
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 3/static/images/css4.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide7">
+          <div class="wrap size-50">
+            <p class="text-subtitle aligncenter">You are not alone. Grab some help!</p>
+            <h1 class="aligncenter"><a href="https://cssreference.io" target="_blank">CSS Cheat Sheet</a></h1>
+            <p class="text-into aligncenter">cssreference.io</p>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide8">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Implementasi CSS #1</h2>
+                <p class="text-intro">Bagaimana cara implementasi kode CSS ?</p>
+                <ol>
+                  <li>
+                    Terdapat 3 cara pengimplementasian kode CSS, yaitu <code>inline</code>, <code>internal</code>, dan <code>eksternal</code>
+                  </li>
+                  <li>
+                    Perhatikan code snippet disamping !
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 3/static/images/css2.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide9">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Implementasi CSS #2</h2>
+                <p class="text-intro">Bagaimana cara implementasi kode CSS ?</p>
+                <ol>
+                  <li>
+                    Perhatikan code snippet disamping !
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 3/static/images/css3.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide10">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #1</h2>
+                <p class="text-intro">Perhatikan code snippet di samping!</p>
+                <ol>
+                  <li>
+                    Implementasikan kode CSS tersebut dengan menggunakan teknik <code>inline</code>, <code>internal</code>, dan <code>eksternal</code>
+                  </li>
+                  <li>
+                    Untuk <code>eksternal</code> simpan dengan nama <strong><span style="color:magenta">customStyle.css</span></strong>
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+body {
+  color:white;
+  font-family:arial;
+  background-color:black;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide11">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode1.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide10">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #2-1</h2>
+                <p class="text-intro">Perhatikan code snippet di samping!</p>
+                <ol>
+                  <li>
+                    Salin kode HTML di samping !
+                  </li>
+                  <li>
+                    Simpan dengan nama yang mudah di ingat. Ingat jangan lupa simpan dengan ekstensi <code>html</code>
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Pratice Makes Perfect #1&lt;/title&gt;
+    &lt;!-- Sesuaikan Path --&gt;
+    &lt;link rel="stylesheet" type='text/css' media='all' href="../sampel-code/css/stylecss2.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="div1"&gt;
+      &lt;h1&gt;Ini Heading 1 di DIV 1&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class="div2"&gt;
+      &lt;h1&gt;Ini Heading 1 di DIV 2&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;p id="par"&gt;
+      Paragraf ini menggunakan styling CSS dengan selector ID
+    &lt;/p&gt;
+    &lt;p&gt;
+      Ini paragraf tanpa styling
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide10">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #2-2</h2>
+                <p class="text-intro">Perhatikan code snippet di samping!</p>
+                <ol>
+                  <li>
+                    Salin kode HTML di samping !
+                  </li>
+                  <li>
+                    Simpan dengan nama <code>stylecss2.css</code>
+                  </li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+.div1 h1 {
+  color:black;
+  background-color: white;
+}
+
+.div2 h1 {
+  color:white;
+  background-color: black;
+}
+
+#par {
+  text-decoration: underline;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide11">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode2.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide12">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Box-Model #1</h2>
+                <p class="text-intro">Konsep Dasar <code>Margin</code>, <code>Border</code>, dan <code>Padding</code></p>
+                <ol>
+                  <li>Perhatikan gambar di samping!</li>
+                  <li><code>Margin</code> digunakan untuk memberikan jarak antar elemen/tag HTML</li>
+                  <li><code>Padding</code> digunakan untuk memberikan jarak antara konten elemen dengan elemen tsb</li>
+                  <li><code>Border</code> digunakan untuk memberikan efek garis pada sisi-sisi elemen</li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 3/static/images/cssbox.png" alt="https://i.pinimg.com/originals/b1/79/76/b179765cbff3d5c6ac2f6cc932293af5.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide13">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #3-1</h2>
+                <p class="text-intro">Create a New Box</p>
+                <ol>
+                  <li>Buat 2 buah <code>div</code> dengan <code>class</code> <strong>box</strong></li>
+                  <li>Untuk <code>class="box"</code> berikan styling seperti code snippet di samping</li>
+                  <li>Berikan tulisan "Box 1" untuk <code>div</code> pertama dan "Box 2" untuk <code>div</code> kedua</li>
+                  <li>Ingat! Letakkan <code>div</code> di dalam tag <code>body</code> !</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+.box {
+  background-color:green;
+  color:yellow;
+  /* Ukuran Box */
+  width:100px;
+  height:100px;
+  /* Margin Bawah Antar Box */
+  margin-bottom:50px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide14">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode3.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide15">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #3-2</h2>
+                <p class="text-intro">4 sides margin</p>
+                <ol>
+                  <li>Gunakan kembali (copy) kode HTML yang sudah digunakan sebelumnya.</li>
+                  <li>Tambahkan <code>margin</code> untuk <code>top</code>, <code>left</code>, dan <code>right</code></li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+.box {
+  background-color:green;
+  color:yellow;
+  /* Ukuran Box */
+  width:100px;
+  height:100px;
+  /* Margin 4 sisi */
+  margin-top:10px;
+  margin-right:20px;
+  margin-bottom:50px;
+  margin-left:20px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide16">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode4.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide17">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #3-3</h2>
+                <p class="text-intro">What about paddings ?</p>
+                <ol>
+                  <li>Gunakan kembali (copy) kode HTML yang sudah digunakan sebelumnya.</li>
+                  <li>Gunakan code snippet di samping untuk <em>styling</em></li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+.box {
+  background-color:pink;
+  color:black;
+  /* Ukuran Box */
+  width:100px;
+  height:100px;
+  /* Margin */
+  margin-bottom:50px;
+  /* Padding */
+  padding-left:20px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide18">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode5.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide19">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #3-4</h2>
+                <p class="text-intro">We need some border capt !</p>
+                <ol>
+                  <li>Gunakan kembali (copy) kode HTML yang sudah digunakan sebelumnya.</li>
+                  <li>Gunakan code snippet di samping untuk <em>styling</em></li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+.box {
+  background-color:pink;
+  color:black;
+  /* Ukuran Box */
+  width:100px;
+  height:100px;
+  /* Margin */
+  margin-bottom:10px;
+  /* Padding */
+  padding-left:5px;
+  /* Border */
+  border-color:black;
+  border-style:solid; /* ada banyak style */
+  border-width:2px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide20">
+          <div class="wrap size-50">
+            <h2 class="aligncenter">Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode6.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide21">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">CSS Shorthand</h2>
+              <p class="text-intro">
+                Lelah menuliskan <code>-top</code>, <code>-right</code>, <code>-bottom</code>, dan <code>-left</code> ? We need a solution !
+              </p>
+              <ol>
+                <li>
+                  Kita dapat menuliskan 4 value, <code>margin: 10px 20px 5px 30px;</code> yang berarti ukurang <code>top</code> 10px, <code>right</code> 20px, <code>bottom</code> 5px, dan <code>left</code> 30px. Ingat urutannya adalah <code>top, right, bottom, left</code> !
+                </li>
+                <li>
+                  Kita dapat menuliskan 3 value, <code>margin: 10px 20px 5px;</code>. Sesuai dengan urutan berarti <code>top, right, bottom</code>. <code>left</code> akan mengikuti ukuran dari <code>right</code> yaitu 20px
+                </li>
+                <li>
+                  Kita dapat menuliskan 2 value, <code>margin: 10px 20px</code>, maka sesuai urutan, <code>bottom</code> akan berukuran 10px dan <code>left</code> akan merukuran 20px
+                </li>
+                <li>
+                  Kita dapat menuliskan 1 value, <code>margin : 5px;</code>, yang berarti semua sisi akan berukuran sama
+                </li>
+              </ol>
+            </div>
+            <div class="column">
+                <pre>
+.box1 {
+  margin: 10px 20px 5px 30px;
+}
+.box2 {
+  margin: 10px 20px 5px;
+}
+.box3 {
+  margin: 10px 20px;
+}
+.box4 {
+  margin: 5px;
+}
+                </pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide22">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p class="text-subtitle">Pengenalan HTML</p>
+              <h2 class="text-context">Typography</h2>
+              <p class="text-intro">Bagaimana memberikan <em>style</em> pada "tulisan" ?</p>
+              <ol>
+                <li>Tedapat banyak jenis font yang dapat digunakan dalam pengembangan web. Default <em>Times New Roman</em></li>
+                <li>Akan tetapi, pastikan browser mengenali font yang digunakan. Contoh font <code>Helvatica</code> hanya dapat di-<em>load</em> pada browser Safari</li>
+                <li><code>font-family</code> digunakan untuk menentukan jenis font yang digunakan</li>
+                <li>Contoh : <code>font-family:calibri;</code></li>
+                <li>Jika <code>font-family:calibri, serif, arial, verdana;</code>, maka urutan font menunjukkan prioritas penggunaan</li>
+                <li><code>font-size</code> digunakan untuk menentukan ukuran font. Satuan yang dapat digunakan yaitu, <code>px</code>, <code>point (pt)</code>, dan <code>em</code></li>
+              </ol>
+            </div>
+            <div class="column">
+              <ol>
+                <li><code>font-weight</code> digunakan untuk menentukan ketebalan font</li>
+                <li><code>letter-spacing</code> digunakan untuk menentukan jarak antar karakter</li>
+                <li><code>line-height</code> digunakan untuk jarak antar baris</li>
+                <li><code>text-align</code> digunakan untuk menjadikan teks rata kiri, kanan, tengah, atau rata kanan-kiri</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide23">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #4-1</h2>
+                <p class="text-intro">Construct HTML Skeleton</p>
+                <ol>
+                  <li>Tulis kode HTML pada code snippet</li>
+                  <li>Ingat nama file CSS-nya</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Typography&lt;/title&gt;
+    &lt;link rel="stylesheet" type='text/css' media='all' href="../sampel-code/css/csstypo.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="p1"&gt;Paragraf sans-serif, 12pt, underline, dan warna magenta&lt;/p&gt;
+    &lt;p id="p2"&gt;Paragram jenis arial, 32pt, line-through, dan warna cekolat&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide24">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #4-2</h2>
+                <p class="text-intro">Add some make up</p>
+                <ol>
+                  <li>Tulis kode css pada code snippet</li>
+                  <li>Simpan nama file sesuai dengan <code>link rel</code> CSS pada file HTML</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+#p1 {
+  font-family: sans-serif;
+  font-size: 12pt;
+  text-decoration: underline;
+  color: magenta;
+}
+
+#p2 {
+  font-family: arial;
+  font-size: 32pt;
+  text-decoration: line-through;
+  color: brown;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide25">
+          <div class="wrap size-50">
+            <h2 class="aligncenter">Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode7.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide26">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">CSS Images #1</h2>
+                <p class="text-intro">How to put an images in CSS</p>
+                <ol>
+                  <li>Untuk memuat gambar pada sebuah elemen dengan menggunakan CSS diperlukan property <code>background</code></li>
+                  <li>Kita juga dapat melakukan perulangan penggunaan gambar dengan property <code>backgroud-repeat</code> dan value <code>repeat-x</code> untuk perulangan thd sumbu x, <code>repeat-y</code> untuk sumbu y</li>
+                  <li>Terdapat juga value <code>no-repeat</code> untuk gambar tidak ditampilkan berulang</li>
+                  <li>Untuk mengatur posisi digunakan <code>background-position-x</code> untuk sumbu x, <code>background-position-y</code> untuk sumbu y, dan <code>background-position</code> untuk mengatur keduanya sekaligus</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+.logo {
+  /* Load Gambar */
+  background: url('../sampel-code/img/logopolinema.png');
+  background-repeat: no-repeat;
+  background-size: 138px 845px;
+  background-position: 5px 5px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide27">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #5-1</h2>
+                <p class="text-intro">Load Image</p>
+                <ol>
+                  <li>Buat sebuah <code>div</code> dengan <code>id</code> box</li>
+                  <li>Lakukan styling pada <code>div</code> tsb dengan menggunakan code snippet di samping</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+#box {
+  background: url('../img/logopolinema.png');
+  /* Ukuran Gambar */
+  background-size: 72px 90px;
+  width: 100%;
+  height: 100%;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide28">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode8.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide29">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Practice Makes Perfect #5-2</h2>
+                <p class="text-intro">Load Image</p>
+                <ol>
+                  <li>Buat 3 buah <code>div</code> dengan <code>id</code> masing-masing box1, box2, box3</li>
+                  <li>Pada box1 lakukan <code>no-repeat</code>, pada box2 <code>repeat-x</code>, dan box3 <code>repeat-y</code></li>
+                  <li>Atur posisi pada x=5px dan y=5px</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+/* Just a Clue. Pls code your self */
+#box1 {
+  background: url('../img/logopolinema.png');
+  /* Ukuran Gambar */
+  background-size: 36px 45px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  width: 150px;
+  height: 150px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide30">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode9.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide31">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Floating #1</h2>
+                <p class="text-intro">Floating digunakan untuk memberikan efek rata kiri atau rata kanan pada elemen</p>
+                <ol>
+                  <li>Salin kode HTML pada code snippet</li>
+                  <li>Lakukan <em>styling</em> CSS pada elemen <code>img</code> dengan property <code>float:left;</code></li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Load Image&lt;/title&gt;
+    &lt;link rel="stylesheet" type='text/css' media='all' href="../sampel-code/css/cssfloat1.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- use your own image --&gt;
+    &lt;img src="../sampel-code/img/minions.png" alt="gambar" /&gt;
+    &lt;!-- some sentence --&gt;
+    &lt;p&gt;
+      Swine ribeye capicola cupim rump pork belly meatball beef pig bresaola. Meatball corned beef turducken sausage. Sirloin ground round shank cow. Fatback doner chuck, pastrami picanha sirloin bacon landjaeger meatball ground round.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide32">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode10.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide33">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Floating #2-1</h2>
+                <p class="text-intro">Permasalahan dalam floating</p>
+                <ol>
+                  <li>Salin kode HTML pada code snippet</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Load Image&lt;/title&gt;
+    &lt;link rel="stylesheet" type='text/css' media='all' href="../sampel-code/css/cssfloat2.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="wrap"&gt;
+      &lt;div id="header"&gt;&lt;/div&gt;
+
+      &lt;div id="content"&gt;
+        &lt;div id="main-content"&gt;&lt;/div&gt;
+        &lt;div id="sidebar"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div id="footer"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide34">
+          <div class="wrap">
+            <p class="text-subtitle">Pengenalan CSS</p>
+            <h2 class="text-context">Floating #2-2</h2>
+            <p class="text-intro">Terapkan style pada code snippet</p>
+            <div class="grid vertical-align">
+              <div class="column">
+                <pre>
+#wrap {
+  width: 960px;
+  /* agar wrap berada di tengah */
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+  height: 50px;
+  background: #F06292;
+  margin-bottom: 10px;
+}
+#content {
+  padding: 20px;
+  background: #FCE4EC;
+  margin-bottom: 10px;
+}
+                </pre>
+              </div>
+              <div class="column">
+                <pre>
+/* Lanjutan code snippet */
+#main-content {
+  width: 600px;
+  height: 700px;
+  float: left;
+  background: #F06292;
+}
+#sidebar {
+  width: 300px;
+  height: 200px;
+  float: right;
+  background: #F06292;
+}
+#footer {
+  width: 100%;
+  height: 50px;
+  background: #F06292;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide32">
+          <div class="wrap size-50">
+            <h2>Ada yang aneh ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode11.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide33">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Floating #2-3</h2>
+                <p class="text-intro">Permasalahan dalam floating</p>
+                <ol>
+                  <li>Mengapa <code>#main-content</code> dan <code>sidebar</code> tidak masuk didalam <code>#content</code> ?</li>
+                  <li>Mengapa tinggi <code>#content</code> tidak setinggi <code>#main-content</code> + <code>padding</code> 20px pada <code>top</code> dan <code>bottom</code> ?</li>
+                  <li>Hal ini karena terdapat property <code>floating</code> pada <code>#main-content</code> dan <code>#sidebar</code> sehingga <code>#content</code> menganggap tidak ada elemen didalamnya</li>
+                <ol>
+              </div>
+              <div class="column">
+                <p style="font-size:24pt">Solusi ?</p>
+                <p>Tambahkan property <code>overflow</code> dengan value <code>hidden</code> pada <code>#content</code></p>
+                <pre>
+#content {
+  ...
+  overflow: hidden;
+}
+                </pre>
+                <p>Kedua, tambahkan <code>div</code> kosong sebagai <em>child</em> terakhir dari <code>#content</code> pada file HTML</p>
+                <pre>
+&lt;div id="content"&gt;
+  ...
+  &lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide32">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode11-2.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide33">
+          <div class="wrap size-90">
+            <p class="text-subtitle">Pengenalan CSS</p>
+            <h2 class="text-context">Positions</h2>
+            <p class="text-intro">Jenis-jenis pengaturan posisi elemen dalam HTML</p>
+            <ol>
+              <li><code>Static</code>, dimana kita tidak bisa menentukan posisi elemen HTML. Posisi <code>static</code> tidak memerlukan penggunaan property</li>
+              <li><code>position:relative</code> digunakan untuk mengatur posisi elemen sesuai dengan koordinat yang diinginkan dengan menggunakan property tambahan <code>top</code>, <code>right</code>, <code>bottom</code>, dan/atau <code>left</code></li>
+              <li><code>position:relative</code> akan sangat dinamis berdasarkan ukuran tampilan browser serta efek <em>zooming</em></li>
+              <li><code>position:absolute</code> digunakan agar posisi elemen child tidak bergantung pada elemen parent</li>
+              <li><code>position:fixed</code> digunakan untuk menjadi posisi elemen menjadi tetap dan tidak dipengaruhi ukuran tampilan browser maupun efek <em>zooming</em></li>
+            <ol>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide29">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Pratice Makes Perfect #6-1</h2>
+                <p class="text-intro">Relative Position</p>
+                <ol>
+                  <li>Buatlah sebuah <code>div</code> dengan <code>id</code> "box"</li>
+                  <li>Salin code snipped samping</li>
+                  <li>Coba modifikasi posisi, dan coba terapkan posisi <code>static</code></li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+#box {
+  background:blue;
+  width: 200px;
+  height: 200px;
+  position:relative;
+  top: 100px;
+  left: 200px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide32">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode12.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide29">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Pratice Makes Perfect #6-2</h2>
+                <p class="text-intro">Absolute Position #1</p>
+                <ol>
+                  <li>Buatlah 2 buah <code>div</code> denga <code>id</code> masing-masing "box1" dan "box2"</li>
+                  <li>Posisikan "box2" sebagai <code>child</code> dari "box1"</li>
+                  <li>Berikan <em>styling</em> pada kedua box dengan menggunakan code snippet di samping</li>
+                  <li>Coba lakukan modifikasi pada <em>style</em> "box2" dengan menghilangkan <code>position:absolute</code> dan property pendukung <em>position</em> lainnya. Apa yang terjadi ?</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+#box1 {
+  background:blue;
+  width: 200px;
+  height: 200px;
+}
+#box2 {
+  background:magenta;
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple aligncenter" id="slide32">
+          <div class="wrap size-50">
+            <h2>Berhasil ?</h2>
+            <figure>
+              <img src="../Week 3/static/images/csscode13.png">
+            </figure>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide29">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Pratice Makes Perfect #6-3</h2>
+                <p class="text-intro">Absolute Position #2</p>
+                <ol>
+                  <li>Agar "box2" tetap berada pada "box1", maka tambakan <code>position:relative</code> pada <em>style</em> "box1"</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+#box1 {
+  background:blue;
+  width: 200px;
+  height: 200px;
+  position:relative;
+}
+#box2 {
+  background:magenta;
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide29">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan CSS</p>
+                <h2 class="text-context">Pratice Makes Perfect #6-4</h2>
+                <p class="text-intro">Fixed Position</p>
+                <ol>
+                  <li>Buat kembali <code>div</code> dengan <code>id</code> "box"</li>
+                  <li>Gunakan <em>styling</em> pada code snippet di samping dan gunakan <code>position:fixed</code></li>
+                  <li>Buktikan dengan melakukan <em>zooming</em> pada halaman tersebut</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+#box1 {
+  background:blue;
+  width: 200px;
+  height: 200px;
+  position:fixed;
+  left:10px;
+  top:100px;
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide7">
+          <div class="wrap size-50">
+            <h1 class="aligncenter">Studi Kasus</h1>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide29">
+          <div class="wrap">
+            <h1>Don't you remember . . . </h1>
+            <div class="grid vertical-align">
+              <div class="column">
+                <figure>
+                  <img src="../Week 3/static/images/studycase2.png">
+                </figure>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 3/static/images/adele.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide34">
+          <span class="aligncenter text-intro" style="font-size:7em">Pertanyaan ?</span>
+        </section>
+
+      </article>
+
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../Week 3/static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../Week 3/static/js/svg-icons.js"></script>
+
+  </body>
+</html>
