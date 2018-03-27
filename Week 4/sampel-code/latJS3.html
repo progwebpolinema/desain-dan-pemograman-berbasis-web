@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Latihan JS 3</title>
+    </head>
+    <body>
+        <div id="dv">
+            <p id="p1">Ini paragraf pertama</p>
+            <p id="p2">Ini paragraf kedua</p>
+        </div>
+        <script>
+            // Membuat element <p>
+            var p3 = document.createElement("p");
+            var node = document.createTextNode("Ini paragraf ke 3 dengan JS");
+            // memasuukan text dalam element <p> baru
+            p3.appendChild(node);
+            // menambahkan <p> baru pada div id=dv
+            document.getElementById("dv").appendChild(p3);
+        </script>
+    </body>
+</html>

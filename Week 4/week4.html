@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>Introduction to JS</title>
+    <meta name="description" content="Materi Pengenalan Awal Tentang CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Week 4/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Week 4/static/css/svg-icons.css">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <section class="bg-apple aligncenter" id="main">
+          <div class="wrap">
+            <h1 class="text-data">JavaScript 101</h1>
+            <h4 class="text-subtitle">Introduction to JS</h4>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="outlines">
+          <div class="wrap size-50">
+            <h1>Outlines</h1>
+            <ol class="text-cols">
+              <li class="text-intro">Penganalan JavaScript</li>
+              <li class="text-intro">Pengenalan DOM</li>
+              <li class="text-intro">Pengenalan Event</li>
+              <li class="text-intro">Object Window</li>
+              <li class="text-intro">Object String</li>
+              <li class="text-intro">Array</li>
+              <li class="text-intro">Tanggan dan Waktu</li>
+              <li class="text-intro">Penanganan Form</li>
+              <li class="text-intro">Studi Kasus</li>
+            </ol>
+          </div>
+        </section>
+        <section class="bg-apple" id="slide3">
+          <p class="text-subtitle">Penganalan JavaScript</p>
+          <div class="grid vertical-align">
+            <div class="column">
+              <h2 class="text-context">Apa itu JavaScript (JS) ?</h2>
+              <ol>
+                <li>JavaScript <strong>!=</strong> Java</li>
+                <li>JS merupakan bahasa pemograman yang dinamis</li>
+                <li>JS juga merupakan bahasa <em>scripting</em> yang menjadi bagian dari ECMAScript (ES)</li>
+                <li>ES merupakan standar internasional untuk <em>scripting languange</em> berdasarkan spesifikasi ECMA-262 dan ISO/IEC 16262</li>
+                <li>Standar terbaru dari ES adalah ES6. <a href="http://es6-features.org/#Constants">More about ES6</a></li>
+              <ol>
+            </div>
+            <div class="column">
+              <h2 class="text-context">Mengapa belajar JavaScript ?</h2>
+              <ol>
+                <li><strong>One of 3 web developer must learn!</strong> (selain HTML dan CSS)</li>
+                <li>JS is lightweight, interpreted programming languange</li>
+                <li>Terintegrasi dengan HTML dan CSS</li>
+                <li>Commonly used as client side script</li>
+                <li>Thats all ???</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide4">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class=column>
+                <h2>Are you sure ?</h2>
+                <p class="text-intro">Nowdays, JS can be anything !</p>
+                <p>from back-end to front-end, even NATIVE!</p>
+              </div>
+              <div class="column">
+                <img src="../Week 4/static/images/js_frameworks.png"
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide5">
+          <div class="wrap">
+            <h1 class="text-title aligncenter">DEMO : Web Apps Using JS</h1>
+            <p class="text-intro aligncenter"><a href="http://work.goodboydigital.com/dangermouse/ultimate/">Games</a> <span>&#9672;</span> <a href="http://special.bose.eu/fr/">Web</a></p>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide6">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Variabel dan Fungsi</h2>
+                <ol>
+                  <li>JS is <strong>untyped</strong>. Tidak perlu mendefinisikan tipe varibel. So please, handle carefully!</li>
+                  <li>Variable should be in camelCase without <strong>space!</strong></li>
+                  <li>Kita juga bisa menggunakan operasi aritmatika,  <em>logical operator</em>, dsb</li>
+                  <li>Juga terdapat fungsi (method) yang bisa kita buat dalam JS</li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 4/static/images/js1.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide7">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Apa itu DOM</h2>
+                <ol>
+                  <li>Singkatan dari <strong>Document Object Model</strong> atau lebih dikenal dengan HTML DOM</li>
+                  <li>HTML DOM akan dibuat ketika sebuah web pages telah dimuat (<em>loaded</em>) oleh web browser</li>
+                  <li>Dengan adanya HTML DOM, memungkikan JS untuk mengakses element HTML bahkan melakukan manupulasi element HTML secara langsung</li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 4/static/images/dom.gif" />
+                </figure>
+                <h6 class="aligncenter">source: <a href="https://www.w3schools.com/js/pic_htmltree.gif">https://www.w3schools.com/js/pic_htmltree.gif</a></h6>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide8">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Mengakses element DOM #1</h2>
+                <ol>
+                  <li>Dalam lingkup DOM, element HTML didefinisikan sebagai obyek</li>
+                  <li><code>HTML DOM method</code> merupakan <em>action</em> yang kita bisa lakukan pada element HTML. Ex: membuat atau membuang elemen HTML</li>
+                  <li><code>HTML DOM properties</code> merupakan <em>value</em> yang bisa kita dapatkan (<code>get</code>) dan/atau bisa kita rubah (<code>set</code>)</li>
+                  <li><code>getElementById</code> merupakan metode paling lazim digunakan untuk mengakses obyek HTML DOM</li>
+                  <li>Perhatikan contoh disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Latihan JS 1&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="demo"&gt;&lt;/p&gt;
+    &lt;script&gt;document.getElementById("demo").innerHTML = "Hello World";&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide9">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Mengakses element DOM #2</h2>
+                <p class="text-intro">Bagaimana mengambil value element HTML ?</p>
+                <ol>
+                  <li>Untuk menggambil konten dari <code>tag</code> element, kita dapat menggunakan property <code>textContent</code></li>
+                  <li>Untuk mengambil sebuah value dari element (misal input form), kita dapat menggunakan property <code>value</code></li>
+                  <li>Perhatikan contoh disamping!</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Latihan JS 2&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="demo2"&gt;
+      Spicy jalapeno ground round brisket meatloaf ribeye meatball chuck pork loin bresaola filet mignon pastrami beef tongue alcatra spare ribs.
+    &lt;/p&gt;
+    &lt;label&gt;Textbox :&lt;/label&gt;&lt;input type="text" id="tb" value="Gordon Ramsey"&gt;
+    &lt;script&gt;
+      var tb = document.getElementById("tb").value;
+      document.getElementById("demo2").textContent = tb;
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide10">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Mengakses element DOM #3</h2>
+                <p class="text-intro">Add some new element ?</p>
+                <ol>
+                  <li>Dengan menggunakan HTML DOM dan JS, kita juga dapat menambahkan element baru pada dokument HTML</li>
+                  <li>Perhatikan contoh disamping!</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Latihan JS 3&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="dv"&gt;
+      &lt;p id="p1"&gt;Ini paragraf pertama&lt;/p&gt;
+      &lt;p id="p2"&gt;Ini paragraf kedua&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+      // Membuat element &lt;p&gt;
+      var p3 = document.createElement('p');
+      var node = document.createTextNode('Ini paragraf ke 3 dengan JS');
+      // memasuukan text dalam element &lt;p&gt; baru
+      p3.appendChild(node);
+      // menambahkan &lt;p&gt; baru pada div id=dv
+      document.getElementById('dv').appendChild(p3);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide11">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Mengakses element DOM #4</h2>
+                <p class="text-intro">Remove some element</p>
+                <ol>
+                  <li>Element HTML DOM juga dapat kita hapus dengan menggunakan JS</li>
+                  <li>Perhatikan contoh disamping!</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;Latihan JS 4&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;div id="parent"&gt;
+          &lt;p id="p1"&gt;Paragraf pertama&lt;/p&gt;
+          &lt;p id="p2"&gt;Paragraf kedua&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;script&gt;
+          var parent = document.getElementById("parent");
+          var child = document.getElementById("p2");
+          parent.removeChild(child);
+      &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide12">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">JS Event #1</h2>
+                <p class="text-intro">Apa itu event dalam JS ?</p>
+                <ol>
+                  <li>Dengan menggunakan HTML DOM dan JS, element HTML dapat bereaksi sesuai dengan tujuan yang diinginkan. Inilah yang disebut sebagai <em>event</em></li>
+                  <li><code>Event</code>diantaranya dapat berupa kejadian ketika halaman web selesai dimuat, perubahan pada input, ketika tombol di<em>click</em>, dsb</li>
+                  <li><strong>Practice makes perfect!</strong>Buat sebuah folder bernama <code>js</code>, salin script disamping, dan simpan dengan nama <code>script1.js</code></li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>
+function getValue() {
+  var firstName = document.getElementById('firstName').value;
+  var lastName = document.getElementById('lastName').value;
+  var par = document.createElement('p');
+  var node = document.createTextNode('Hallo ' + firstName + ' ' +lastName);
+  par.appendChild(node);
+  document.getElementById('div').appendChild(par);
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide13">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">JS Event #2</h2>
+                <p class="text-intro">Apa itu event dalam JS ?</p>
+                <ol>
+                  <li>
+                    Salin kode HTML di samping !
+                  </li>
+                  <li>
+                    Simpan dengan nama yang mudah di ingat. Ingat jangan lupa simpan dengan ekstensi <code>html</code>
+                  </li>
+                  <li>Isikan nama depan dan belakang pada form, kemudian click tombol <code>Check!</code>, lihat apa yang terjadi.</li>
+                <ol>
+              </div>
+              <div class="column">
+                <pre>
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;Latihan JS 5&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;script src="../sampel-code/js/script1.js"&gt;&lt;/script&gt;
+  &lt;body&gt;
+      &lt;div id="div"&gt;
+          &lt;label&gt;First Name :&lt;/label&gt;&lt;input type="text" id="firstName"&gt;&lt;br/&gt;
+          &lt;label&gt;Last Name :&lt;/label&gt;&lt;input type="text" id="lastName"&gt;&lt;br/&gt;
+          &lt;button type="submit" onclick="getValue()"&gt;Check!&lt;/button&gt;
+      &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide14">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">JS Event #3</h2>
+                <p class="text-intro">Modifikasi kode latihan sebelumnya</p>
+                <ol>
+                  <li>Kita akan memanipulasi beberapa value, sehingga form menjadi lebih interaktif!</li>
+                  <li>Modifikasi <code>script1.js</code> sehingga menjadi seperti disamping</li>
+                  <li>Simpan file dengan nama <code>script2.js</code></li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 4/static/images/js6a.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide15">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                  <p class="text-subtitle">Pengenalan JS</p>
+                  <h2 class="text-context">JS Event #4</h2>
+                  <p class="text-intro">Modifikasi kode latihan sebelumnya</p>
+                  <ol>
+                      <li>Ubah kode html dari latihan sebelumnya, dengan menambahkan 1 buah button dengan <code>id</code> clearBtn, atribut <code>onclick</code> mengarah pada fungsi <code>clearValue()</code>, dengan tambahan atribut <code>hidden</code></li>
+                      <li>Berhasil ?</li>
+                  <ol>
+              </div>
+              <div class="column">
+                <div id="divform">
+                    <label>First Name :</label><input type="text" id="firstName"><br/>
+                    <label>Last Name :</label><input type="text" id="lastName"><br/><br/>
+                    <button type="submit" onclick="getValue()">Check!</button><br/><br/>
+                    <button type="submit" id="clearBtn" onclick="clearValue()" hidden>clear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide16">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Object Window #1</h2>
+                <p class="text-intro">Apa itu object window ?</p>
+                <ol>
+                  <li>Merupakan frame baru yang dibuat oleh browser</li>
+                  <li>Dengan menggunakan JS, kita dapat membuat dan berinterkasi dengan object window</li>
+                  <li>Diantar banyak object window adalah <code>alert</code>, dan <code>prompt</code></li>
+                  <li>You want more ? please visit <a href="https://www.w3schools.com/jsref/obj_window.asp">W3School</a></li>
+                </ol>
+              </div>
+              <div class="column">
+                <div id="window">
+                  <button type="submit" onclick="showAlert()" id="alertBtn">Show Alert</button><br/><br/>
+                  <button type="submit" onclick="showPrompt()" id="promptBtn">Show Prompt</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide17">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Object Window #2</h2>
+                <p class="text-intro">Practice makes perfect!</p>
+                <ol>
+                  <li>I ONLY GIVE YOU A HINT !</li>
+                  <li>Perhatikan script JS disamping! Buatlah struktur HTMLnya sehingga <code>alert</code> dan <code>prompt</code> dapat berjalan seperti contoh pada slide sebelumnya!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>
+function showAlert() {
+  alert('Hallo, ini adalah sebuah window alert!');
+}
+
+function showPrompt() {
+  var fullName = prompt('Please enter your full name!');
+  var par = document.createElement('p');
+  if (fullName != null) {
+    var node = document.createTextNode('Hallo ' + fullName + '!');
+    par.appendChild(node);
+    document.getElementById('window').appendChild(par);
+  }
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide18">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Object String</h2>
+                <p class="text-intro">Manipulasi string</p>
+                <ol>
+                  <li>Seperti bahasa pemograman yang lain, JS juga memiliki kemampuan untuk melakukan manipulasi string</li>
+                  <li>Fungsi manipulasi string yang dapat digunakan diantaranya adalah, <code>charAt()</code>, <code>concat(), </code><code>replace()</code>, <code>slice()</code>, <code>split()</code>, <code>substring()</code>, <code>toLowerCase()</code>, <code>toUpperCase()</code></li>
+                  <li>Do you want more ? Visit <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">W3School</a></li>
+                </ol>
+              </div>
+              <div class="column">
+                  <pre>
+    var origin = "Hello world!";
+    var name = "M. Afif Hendrawan";
+    var chAt = origin.charAt(0); // JS is zero index;
+    console.log(chAt);
+    var conc = origin.concat(name);
+    console.log(conc);
+    // please do the rest !
+    // Check the result using browser console !
+                  </pre>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide20">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Array #1</h2>
+                <p class="text-intro">Masih ingat ???</p>
+                <ol>
+                  <li>Terdapat 3 cara untuk membuat array dalam JS, pertama dengan menggunakan <code>indexer</code>, kedua dengan <code>condensed array</code>, dan yang terakhir adalah <code>literal array</code></li>
+                  <li>Perhatikan contoh disamping</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>
+// Indexer
+var pizzaTopping = new Array();
+pizzaTopping[0] = 'Jamur';
+pizzaTopping[1] = 'Keju';
+pizzaTopping[2] = 'Smooked beef';
+
+// Condensed array
+var pizzaTopping = new Array('Jamur', 'Keju', 'Smooked beef');
+
+// Literal array
+var pizzaTopping = ['Jamur', 'Keju', 'Smooked beef'];
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide21">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Array #2</h2>
+                <p class="text-intro">Akses item, modifiksi, <em>looping through array</em></p>
+              </div>
+              <div class="column">
+                <pre>
+// Our pizza topping array
+var pizzaTopping = ['Jamur', 'Keju', 'Smooked beef'];
+
+// Get 1st item of pizzaTopping
+var topping = pizzaTopping[0];
+console.log(topping);
+
+// Modify 3rd item of pizzaTopping;
+pizzaTopping[2] = 'Smooked chicken'; // REMEMBER, ZERO INDEX
+
+// Looping through items in array
+for (var i=0, i < pizzaTopping.lenght; i++) {
+  console.log(pizzaTopping[i]);
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide22">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Array #3</h2>
+                <p class="text-intro">Manipulasi array</p>
+                <ol>
+                  <li>Seperti halnya, <code>string</code>, terdapat beberapa method untuk melakukan manipulasi pada array</li>
+                  <li>diantaranya adalah <code>concat</code>, <code>join</code>, <code>pop</code>, dan <code>push</code></li>
+                  <li>Referensi : <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">W3School</a></li>
+                  <li>Cobalah method dalam array dengan menggunakan bahan dari referensi</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide34">
+          <span class="aligncenter text-intro" style="font-size:7em">Pertanyaan ?</span>
+        </section>
+
+      </article>
+
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../Week 4/static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../Week 4/static/js/svg-icons.js"></script>
+
+    <!-- Script for Latihan 6 JS -->
+    <script>
+      function getValue() {
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var par = document.createElement('p');
+        par.setAttribute('id','welcome');
+        var node = document.createTextNode('Hallo ' + firstName + ' ' +lastName);
+        par.appendChild(node);
+        document.getElementById('divform').appendChild(par);
+        var clearBtn = document.getElementById('clearBtn').removeAttribute('hidden')
+      }
+
+      function clearValue() {
+        var firstName = document.getElementById('firstName').value = '';
+        var lastName = document.getElementById('lastName').value = '';
+        var hello = document.getElementById('welcome');
+        document.getElementById('divform').removeChild(hello);
+        var clearBtn = document.getElementById('clearBtn').setAttribute('hidden','');
+      }
+
+      function showAlert() {
+        alert('Hallo, ini adalah sebuah window alert!');
+      }
+
+      function showPrompt() {
+        var fullName = prompt('Please enter your full name!');
+        var par = document.createElement('p');
+        if (fullName != null) {
+          var node = document.createTextNode('Hallo ' + fullName + '!');
+          par.appendChild(node);
+          document.getElementById('window').appendChild(par);
+        }
+      }
+    </script>
+
+  </body>
+</html>
