@@ -45,9 +45,8 @@
               <li class="text-intro">Object Window</li>
               <li class="text-intro">Object String</li>
               <li class="text-intro">Array</li>
-              <li class="text-intro">Tanggan dan Waktu</li>
               <li class="text-intro">Penanganan Form</li>
-              <li class="text-intro">Studi Kasus</li>
+              <li class="text-intro">Tugas</li>
             </ol>
           </div>
         </section>
@@ -613,6 +612,46 @@ for (var i=0, i < pizzaTopping.lenght; i++) {
         </section>
 
         <section class="bg-apple" id="slide24">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan JS</p>
+                <h2 class="text-context">Form Handling</h2>
+                <p class="text-intro">Form Validation #1</p>
+                <ol>
+                  <li>Didalam sebuah form terkadang terdapat isian yang harus alias wajib diisi</li>
+                  <li>Sebagai programmer yang baik, kita harus memperhatikan hal ini dan memastikan user melakukan isian dengan benar</li>
+                  <li>Salah satu yang dapat dilakukan adalah validasi form</li>
+                  <li>Contoh validasi yang paling sederhana adalah memvalidisi isian form, apakah sudah diisi atau belum.</li>
+                  <li>Perhatikan kode disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <pre>
+function validateForm () {
+  var fname = document.forms["myForm"]["fname"].value;
+  var lname = document.forms["myForm"]["lname"].value;
+
+  if (fname == "" && lname == "") {
+      alert('Nama depan dan belakang harus di isi!');
+      return false;
+  } else if (fname == "") {
+      alert('Nama depan harus di isi!');
+      return false;
+  } else if (lname == "") {
+      alert('Nama belakang harus di isi!');
+      return false;
+  } else {
+      return true;
+  }
+}
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide25">
             <div class="wrap">
               <div class="grid vertical-align">
                 <div class="column">
@@ -620,12 +659,39 @@ for (var i=0, i < pizzaTopping.lenght; i++) {
                   <h2 class="text-context">Array #4</h2>
                   <p class="text-intro">Penggunaan Array pada javascript</p>
                   <img src="../Week 4/static/images/array1.png" width="400" height="400"/>
+                  <h2 class="text-context">Form Handling</h2>
+                  <p class="text-intro">Form Validation #2</p>
+                  <ol>
+                    <li>Didalam sebuah form terkadang terdapat isian yang harus alias wajib diisi</li>
+                    <li>Sebagai programmer yang baik, kita harus memperhatikan hal ini dan memastikan user melakukan isian dengan benar</li>
+                    <li>Salah satu yang dapat dilakukan adalah validasi form</li>
+                    <li>Contoh validasi yang paling sederhana adalah memvalidisi isian form, apakah sudah diisi atau belum.</li>
+                    <li>Perhatikan kode disamping!</li>
+                  </ol>
+                </div>
+                <div class="column">
+                  <pre>
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;Latihan JS 7&lt;/title&gt;
+      &lt;script src="../sampel-code/js/script3.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;!-- Dalam tag form seharusnya ada attribute action, kita bahas lain waktu --&gt;
+      &lt;form id="myForm" onsubmit="return validateForm()" method="post"&gt;
+        &lt;label&gt;First Name : &lt;/label&gt;&lt;input type="text" name="fname"&gt;&lt;br/&gt;
+        &lt;label&gt;Last Name : &lt;/label&gt;&lt;input type="text" name="lname"&gt;&lt;br/&gt;
+        &lt;input type="submit" value="Submit"&gt;
+      &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                  </pre>
                 </div>
               </div>
             </div>
           </section>
   
-          <section class="bg-apple" id="slide25">
+          <section class="bg-apple" id="slide26">
               <div class="wrap">
                 <div class="grid vertical-align">
                   <div class="column">
@@ -639,7 +705,7 @@ for (var i=0, i < pizzaTopping.lenght; i++) {
               </div>
             </section>
   
-            <section class="bg-apple" id="slide26">
+            <section class="bg-apple" id="slide27">
                 <div class="wrap">
                   <div class="grid vertical-align">
                     <div class="column">
@@ -653,7 +719,7 @@ for (var i=0, i < pizzaTopping.lenght; i++) {
                 </div>
               </section>
 
-              <section class="bg-apple" id="slide27">
+              <section class="bg-apple" id="slide28">
                   <div class="wrap">
                     <div class="grid vertical-align">
                       <div class="column">
@@ -667,7 +733,7 @@ for (var i=0, i < pizzaTopping.lenght; i++) {
                   </div>
                 </section>
 
-                <section class="bg-apple" id="slide28">
+                <section class="bg-apple" id="slide29">
                     <div class="wrap">
                       <div class="grid vertical-align">
                         <div class="column">
@@ -682,20 +748,64 @@ for (var i=0, i < pizzaTopping.lenght; i++) {
                   </section>
                  
     
-                  <section class="bg-apple" id="slide29">
-                      <div class="wrap">
-                        <div class="grid vertical-align">
-                          <div class="column">
-                            <p class="text-subtitle">STUDI KASUS</p>
-                            <h2 class="text-context">Menggunakan API Google Map</h2>
-                            <li>Referensi : <a href="https://developers.google.com/maps/documentation/javascript/tutorial">API Google</a></li>
-                           <li>cara mendapatkan koordinat : <a href="https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=id">link</a></li>
-                            <img src="../Week 4/static/images/map.png" width="800" height="800"/>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-        <section class="bg-apple" id="slide34">
+        <section class="bg-apple" id="slide30">
+            <div class="wrap">
+              <div class="grid vertical-align">
+                <div class="column">
+                  <p class="text-subtitle">STUDI KASUS</p>
+                  <h2 class="text-context">Menggunakan API Google Map</h2>
+                  <li>Referensi : <a href="https://developers.google.com/maps/documentation/javascript/tutorial">API Google</a></li>
+                  <li>cara mendapatkan koordinat : <a href="https://support.google.com/maps/answer/18539?co=GENIE.Platform%3DDesktop&hl=id">link</a></li>
+                  <img src="../Week 4/static/images/map.png" width="800" height="800"/>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="bg-apple" id="slide31">
+            <div class="wrap">
+              <div class="grid vertical-align">
+                <div class="column">
+                  <p class="text-subtitle">Pengenalan JS</p>
+                  <h2 class="text-context">TUGAS</h2>
+                  <p class="text-intro">Datetime in JS</p>
+                  <ol>
+                    <li>Datetime adalah elemen tidak terpisahkan dalam pengembangan apliaksi apapun</li>
+                    <li>Untuk itu kita harus mengetahui cara untuk membuat sebuah datetime baik itu yang sesuai dengan sistem, atau datetime yang kita set</li>
+                    <li>Didalam JS sudah terdapat method atau fungsi datetime() untuk melakukan manipulasi terkait dengan tanggal dan waktu</li>
+                    <li>Tugasnya adalah manfaatkan fungsi datetime() untuk :</li>
+                  </ol>
+                </div>
+                <div class="column">
+                  <h2 class="text-context">Score 100</h2>
+                  <ol>
+                    <li>Tampilkan tanggal</li>
+                    <li>Tampilkan bulan</li>
+                    <li>Tampilkan tahun</li>
+                    <li>Tampilkan tanggal, bulan, tahun dengan format dd/mm/yyyy</li>
+                    <li>Tampilkan tanggal, bulan, tahun dengan format dd-mm-yyyy</li>
+                    <li>Hint : tampilkan dengan menggunakan fungsi <code>console.log()</code></li>
+                  </ol>
+                  <h2 class="text-context">Bonus Stage : Score 25</h2>
+                  <ol>
+                    <li>Buatlah jam dengan format hh:mm -> contoh 23:40</li>
+                    <li>Pastikan jam tersebut berjalan <strong>REAL TIME</strong> dengan <em>ticker</em> detik adalah ":"</li>
+                    <li>Jelaskan setiap fungsi kode yang kamu tulis!</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="bg-apple" id="slide32">
+            <div class="wrap size-50 aligncenter">
+              <p class="aligncenter text-intro" style="font-size:3em">Contoh</p><br/><br/>
+              <div class="aligncenter text-intro" style="font-size:7em" id="clock"></div>
+            </div>
+          </section>
+        
+
+        <section class="bg-apple" id="slide33">
           <span class="aligncenter text-intro" style="font-size:7em">Pertanyaan ?</span>
         </section>
 
@@ -751,7 +861,28 @@ for (var i=0, i < pizzaTopping.lenght; i++) {
 
       function opengoogle (){
           window.open("http://www.google.com","google","width=400,height=300,toolbar=1");
+      }
+      var clockEl = document.querySelector('#clock');
+
+      function getTime() {
+        return new Date().toLocaleTimeString('en-US', 
+          { hour12: false, hour: 'numeric', minute: 'numeric' }).toString();
+      }
+
+      function setTime() {
+        var time = getTime();
+        // check if the colon is there
+        if (clockEl.innerText.split(':').length === 1) {
+          // if it's not, set the actual time
+          clockEl.innerText = time;
+        } else {
+          // if it is, remove the colon
+          clockEl.innerText = time.split(':').join(' ');
         }
+      }
+
+      setInterval( setTime , 1000);
+      setTime()
     </script>
 
   </body>

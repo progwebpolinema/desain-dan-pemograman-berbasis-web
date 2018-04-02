@@ -8,4 +8,16 @@ window.open("http://www.google.com","google","width=400,height=300,toolbar=1"
 </script>
 <input type="button" onclick="bukawindow()" value="buka">
 </body>
+    <head>
+        <title>Latihan JS 7</title>
+        <script src="../sampel-code/js/script3.js"></script>
+    </head>
+    <body>
+        <!-- Dalam tag form seharusnya ada attribute action, kita bahas lain waktu -->
+        <form id="myForm" onsubmit="return validateForm()" method="post">
+            <label>First Name : </label><input type="text" name="fname"><br/>
+            <label>Last Name : </label><input type="text" name="lname"><br/>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
 </html>
