@@ -1,0 +1,141 @@
+/* Pertama-tama kita atur ulang margin 
+dan padding agar tidak menggunakan style 
+bawaan dari browser, dan kita tentukan jenis 
+font standar yang akan kita gunakan. */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* body -> Dasar background dari desain web 
+berwarna abu-abu, jadi kita tentukan 
+warna tersebut pada tag body: */
+body {
+  background-color: #ddd;
+  
+}
+
+/* wrapper */
+/* Margin: 0 auto, akan memberikan 
+jarak dari atas sebesar 0, 
+dan untuk sisi kiri-kanannya 
+kita beri nilai auto sehingga 
+membuat div ini berada di tengah. */
+
+/* 
+Pemberian nilai 780px untuk width bukan tanpa alasan, 
+ini dikarenakan rata-rata pengguna internet didunia menggunakan 
+layar dengan resolusi minimal 1024x768px jadi lebar dari situs 
+kita berada pada ukuran aman meskipun resolusi layar yang digunakan minimal.
+Sebenarnya ukuran lebar minimal standar dari sebuah desain web adalah 960px 
+namun karena pada desain lebar dari web sebesar 780px maka kita gunakan nilai ini.
+Penambahan overflow:hidden karena kita akan menambahkan 
+floating pada daftar-artikel dan sidebar. */
+#wrapper {
+  widows: 780px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#header {
+  height: 70px;
+  widows: 100%;
+  padding: 5px;
+  margin: 20px 0;
+  overflow: hidden;
+  background: black;
+}
+
+#menu-utama {
+  margin-top: 3px;
+  list-style: none;
+}
+
+#menu-utama li {
+  float: left;
+  padding: 8px 20px;
+  border-right: 1px solid #555555;
+}
+
+#menu-utama li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+#header form {
+  float: right;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+#header form input {
+  border: none;
+  height: 20px;
+}
+
+#daftar-artikel {
+  width: 470px;
+  float: left;
+}
+.artikel {
+  background: #ffff;
+  width: 700px;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.artikel img {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  height: 165px;
+}
+.artikel b{
+    color: #616060;
+    background: #ddd;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.artikel p{
+    margin: 10px 0;
+}
+.artikel a{
+    display: block;
+    text-align: right;
+    color: #636363;
+}
+#sidebar{
+    width: 500px;
+    float: right;
+}
+#sidebar h2{
+    font-size: 18px;
+    margin:10px 0;
+}
+#sidebar p{
+    line-height: 20px;
+    color: #636363;
+}
+#sidebar ul li a{
+    color: #636363;
+    text-decoration: none;
+}
+#footer{
+    clear: both;
+    margin:20px 0;
+    text-align: center;
+    background-color: #f0f0;
+    padding: 5px;
+    color: #555555;
+}
+#map{
+  height: 50%;
+  width: 50%;
+  margin: 10;
+  padding: 10;
+  float: right;
+
+}

@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <input type="text" id="timer" size="12">
+    <input type="button" value="Start" onClick="count()">
+    <script type="text/javascript">
+        var c = 0
+        document.getElementById("timer").value = ""
+        function count() {
+            document.getElementById("timer").value = c
+            c = c + 1
+            setTimeout("count()", 1000)
+        }
+    </script>
+</body>
+
+</html>

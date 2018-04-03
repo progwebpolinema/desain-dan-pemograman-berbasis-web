@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+    <form id="frm1" action="">
+        First name:
+        <input type="text" name="fname" id="fname" value="">
+        <br> Last name:
+        <input type="text" name="lname" id="lname" value="">
+        <br>
+        <br>
+        <input type="button" onclick="myFunction()" value="Submit">
+    </form>
+    
+       <p id="hasil"></p>
+     
+     
+    
+    <script>
+        function myFunction() {
+            var x=document.getElementById("fname").value;
+           document.getElementById("hasil").innerHTML=x;
+           alert("hasil yang akan tampil adalah inputan dari first name pertanyaan bagaimana cara menampilkan inputan dari last name");
+        }
+    </script>
+</body>
+
+</html>
+
