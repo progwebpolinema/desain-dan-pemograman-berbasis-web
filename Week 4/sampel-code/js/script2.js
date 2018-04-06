@@ -6,7 +6,7 @@ function getValue() {
     var node = document.createTextNode('Hallo ' + firstName + ' ' +lastName);
     par.appendChild(node);
     document.getElementById('div').appendChild(par);
-    var clearBtn = document.getElementById('clearBtn').removeAttribute('hidden')
+    var clearBtn = document.getElementById('clearBtn').removeAttribute('hidden');
 }
 
 function clearValue() {
@@ -16,3 +16,6 @@ function clearValue() {
     document.getElementById('div').removeChild(hello);
     var clearBtn = document.getElementById('clearBtn').setAttribute('hidden','');
 }
+
+// HTML
+<button type="submit" onclick="clearValue()" id="clearBtn" hidden>Clear</button>
