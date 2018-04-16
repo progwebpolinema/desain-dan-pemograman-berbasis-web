@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>Introduction to Bootstrap</title>
+    <meta name="description" content="Materi Pengenalan Awal Tentang CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Week 7/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Week 7/static/css/svg-icons.css">
+
+    <!-- Load jQuery -->
+    <script src="../Week 7/static/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <section class="bg-apple aligncenter" id="main">
+          <div class="wrap">
+            <h1 class="text-data">Bootstrap</h1>
+            <h4 class="text-subtitle" style="font-style:italic">"The most popular HTML, CSS, and JS library in the world"</h4>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="outlines">
+          <div class="wrap size-50">
+            <h1>Outlines</h1>
+            <ol class="text-cols">
+              <li class="text-intro">Pengenalan Bootstrap</li>
+              <li class="text-intro">Bootstrap Grid</li>
+              <li class="text-intro">Studi Kasus</li>
+              <li class="text-intro">Bootstrap Form</li>
+              <li class="text-intro">Bootstrap Modal</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide3">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Penganalan Bootstrap</p>
+                <h2 class="text-context">Apa itu Bootstrap ? #1</h2>
+                <br/><br/>
+                <ol>
+                  <li>Merupakan <strong><em>library</em></strong> yang digunakan untuk mempermudah membangun desain front-end</li>
+                  <li>Dikembangkan oleh <strong>Mark Otto</strong> dan <strong>Jacob Thornton</strong> dari Twitter</li>
+                  <li>Merupakan kombinasi HTML, CSS, dan JS yang dapat digunakan untuk kebutuhan desain tipografi, form, button, navigasi, dsb.</li>
+                  <li>Versi terbaru dari Bootstrap saat ini adalah versi v4.1.0</li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/bootstraplogo.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide4">
+          <div class="wrap size-50">
+            <h1 class="text-title aligncenter">Contoh Tema dengan Bootstrap</h1>
+            <p class="text-intro aligncenter"><a href="https://themes.getbootstrap.com">https://themes.getbootstrap.com</a></p>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide5">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">How to use Bootstrap ?</h2>
+                <p class="text-intro">At least, there are 4 ways !</p>
+                <br/>
+                <ol>
+                  <li>NPM : <code>npm install bootstrap</code></li>
+                  <li>GEM : <code>gem install bootstrap -v 4.1.0</code></li>
+                  <li>Download dan gunakan librarynya secara offline</li>
+                  <li>CDN</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/bootstrapcdn.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide6">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Bootstrap Grid #1</h2>
+                <p class="text-intro">Konsep Grid Pada Bootstrap</p>
+                <ol>
+                  <li>Merupakan sistem 12 kolom yang digunakan Bootstrap dalam mendefinisikan ukuran komponen</li>
+                  <li>Grid sistem juga memiliki beberpa opsi untuk menentukan lebar maksimal, yaitu : <code>Extra small</code>, <code>Small</code>, <code>Medium</code>, <code>Large</code>, <code>Extra large</code></li>
+                  <li>Prefix yang digunakan dapat dilihat pada tabel</li>
+                  <li>Referensi : <a href="http://getbootstrap.com/docs/4.1/layout/grid/">http://getbootstrap.com/docs/4.1/layout/grid/</a></li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/bootstrapgrid.png"
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide7">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Bootstrap Grid #2</h2>
+                <p class="text-intro">Contoh</p>
+                <ol>
+                  <li>Perhatikan contoh disamping !</li>
+                  <li>Class <code>.container</code> digunakan untuk membuat konten berada pada tengah halaman</li>
+                  <li>Class <code>.row</code> digunakan sebagai <em>wrapper</em> atau wadah untuk kolom-kolom grid</li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 7/static/images/bootstrapgrid2.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide8">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Studi Kasus</h2>
+                <p class="text-intro">Don't you remember ?</p>
+                <br/>
+                <ol>
+                  <li>Masih ingat dengan studi kasus layout di minggu ke-2 ?</li>
+                  <li>Masih bermasalah dengan desain CSS manual yang kita buat di minggu ke 4 ?</li>
+                  <li>Mari kita selesaikan dengan menggunakan bootstrap !</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/studycase1.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide9">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Studi Kasus</h2>
+                <p class="text-intro">Problem #1 - Header</p>
+                <ol>
+                  <li>Bagian paling atas dari desain pada studi kasus adalah sebuah header</li>
+                  <li>Tag HTML <code>&lt;header&gt;&lt;/header&gt;</code> dapat digunakan untuk membuat sebuah header</li>
+                  <li>Didalam header buatlah sebuah tag nav dengan id="webBrand" dan class <code>.navbar</code></li>
+                  <li>NB : Mengapa menggunakan <code>&lt;nav&gt;&lt;/nav&gt;</code>, dan <code>&lt;header&gt;&lt;/header&gt;</code> dan tidak div ? Jawaban <strong>semantic = sesuai peruntukan</strong></li>
+                  <li>Berikan efek warna gray dengan menambahkan class <code>.navbar-dark</code> dan <code>.bg-dark</code></li>
+                  <li>Tambakan anchor <code>a</code> dengan class <code>.navbar-brand</code> didalam nav</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/case1.png"
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Studi Kasus</h2>
+                <p class="text-intro">Problem #2 - Navigation</p>
+                <ol>
+                  <li>Buat kembali element nav dan letakkan dibawah nav "webBrand"</li>
+                  <li>Gunakan class <code>.navbar navbar-expand-lg navbar-dark bg-secondary</code> pada nav</li>
+                  <li>Class <code>.navbar-expand-{ sm | md | lg | xl }</code> digunakan sebagai wrapping atau ruang untuk meletakkan menu navigasi web</li>
+                  <li>Didalam navbar buatlah sebuah div dan berikan class <code>.collapse navbar-collapse</code></li>
+                  <li>Didalam div buat unordered list dengan class <code>.navbar-nav</code></li>
+                  <li>Untuk setiap list item gunakan class <code>.nav-item</code></li>
+                  <li>Didalam list item, gunakan anchor sebagai item dengan class <code>.nav-link</code></li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="static/images/case2.png">
+                </figure>
+              </div>
+            </div>  
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Studi Kasus</h2>
+                <p class="text-intro">Problem #3 - Main Content dan Sidebar</p>
+                <ol>
+                  <li>Untul membuat bagian main content dan sidebar, ingat kembali konsep grid</li>
+                  <li>Buatlah 2 buah kolom. Main content ukuran 9, dan untuk sidebar ukuran 3</li>
+                  <li>Hint : Gunakan class <code>.container-fluid</code> wrapper kontent agar memiliki widht sebesar 100%</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/case3.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Studi Kasus</h2>
+                <p class="text-intro">Problem #4 - Konten</p>
+                <ol>
+                  <li>Dengan teknik container yang sama buatlah bagian konten</li>
+                  <li>Border dan margin dapat ditambahkan. Cek dokumentasi</li>
+                  <li>Bootstrap juga memiliki class untuk button. Cek dokumentasi <a href="http://getbootstrap.com/docs/4.1/components/buttons/">http://getbootstrap.com/docs/4.1/components/buttons/</a></li>
+                </ol>   
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/case4.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan Bootstrap</p>
+                <h2 class="text-context">Studi Kasus</h2>
+                <p class="text-intro">Problem #5 - Footer</p>
+                <ol>
+                  <li>Footer dapat dibuat dengan teknik yang sama dengan pembuatan header</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 7/static/images/case5.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide33">
+          <span class="aligncenter text-intro" style="font-size:7em">Pertanyaan ?</span>
+        </section>
+
+      </article>
+
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../Week 7/static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- Script for Week 7 -->
+    <script>
+      $(document).ready(function(){
+        //Slider
+        $("#slideShow").bxSlider({
+          mode: 'fade',
+          slideWidth: 3500
+        });
+
+        //Live input
+        $("#txtInput").keyup(function(){
+          var value = $(this).val();
+          $("#result").text(value);
+        }).keyup();
+      });
+
+      function displayVals() {
+        var singleValues = $( "#singleSel" ).val();
+        var multipleValues = $( "#multiSel" ).val() || [];
+        $( "#selectResult" ).html( "<b>Single:</b> " + singleValues +
+          "<br/><b>Multiple:</b> " + multipleValues.join( ", " ) );
+      }
+ 
+      $( "select" ).change( displayVals );
+      displayVals();
+
+      $("#alertBtn").click(function(){
+        alert("Contoh fungsi event .click()");
+      });
+
+      // Wait for the DOM to be ready
+      $(function() {
+        // Initialize form validation on the registration form.
+        // It has the name attribute "registration"
+        $("form[name='registration']").validate({
+          // Specify validation rules
+          rules: {
+            // The key name on the left side is the name attribute
+            // of an input field. Validation rules are defined
+            // on the right side
+            firstname: "required",
+            lastname: "required",
+            email: {
+              required: true,
+              // Specify that email should be validated
+              // by the built-in "email" rule
+              email: true
+            },
+            password: {
+              required: true,
+              minlength: 5
+            }
+          },
+          // Specify validation error messages
+          messages: {
+            firstname: "Please enter your firstname",
+            lastname: "Please enter your lastname",
+            password: {
+              required: "Please provide a password",
+              minlength: "Your password must be at least 5 characters long"
+            },
+            email: "Please enter a valid email address"
+          },
+          // Make sure the form is submitted to the destination defined
+          // in the "action" attribute of the form when valid
+          submitHandler: function(form) {
+            form.submit();
+          }
+        });
+      });
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../Week 7/static/js/svg-icons.js"></script>
+
+  </body>
+</html>
