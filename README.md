@@ -7,3 +7,4 @@
 4. Week 5 - Pencil (KUIS)
 6. Week 6 - jQuery
 7. Week 7 - Bootstrap
+8. Week 8 - Intro to PHP (Condition, Loop, Function)
