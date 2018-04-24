@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>Introduction to PHP</title>
+    <meta name="description" content="Materi Pengenalan Awal Tentang CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../Week 8/static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../Week 8/static/css/svg-icons.css">
+
+    <!-- Load jQuery -->
+    <script src="../Week 8/static/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides">
+
+        <section class="bg-apple aligncenter" id="main">
+          <div class="wrap">
+            <h1 class="text-data">PHP</h1>
+            <h4 class="text-subtitle" style="font-style:italic">"PHP : Hypertext Preprocessor"</h4>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="outlines">
+          <div class="wrap size-50">
+            <h1>Outlines</h1>
+            <ol class="text-cols">
+              <li class="text-intro">Pengenalan PHP</li>
+              <li class="text-intro">Variable dan Konstanta pada PHP</li>
+              <li class="text-intro">Struktur Kondisi</li>
+              <li class="text-intro">Struktur Perulangan</li>
+              <li class="text-intro">Fungsi dalam PHP</li>
+              <li class="text-intro">HTML dan PHP</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide3">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Penganalan PHP</p>
+                <h2 class="text-context">Apa itu PHP ?</h2>
+                <br/><br/>
+                <ol>
+                  <li>Merupakan bahasa pemograman <strong>server-side</strong> yang didesain untuk pengembangan aplikasi web</li>
+                  <li>Merupakan bahasa pemograman web yang masih sangat populer hingga saat ini</li>
+                  <li>Karena merupakan bahasa pemograman <strong>server-side</strong> maka seluruh peprosesan kode dilakukan di dalam server</li>
+                  <li><strong>Client</strong> hanya akan melihat hasil dari kode-kode PHP yang telah selesai diproses pada server</li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/php1.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide4">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Persiapan Penggunaan PHP ?</h2>
+                <br/>
+                <h3>The Hard Way</h3>
+                <ol>
+                  <li>Install PHP</code></li>
+                  <li>Install Web Server (Apache HTTP Server, Nginx, etc)</li>
+                  <li>Install Database server (MySQL, SQLite, SQL Server, etc)</li>
+                  <li>Setup PHP module</li>
+                  <li>Setup Web Server</li>
+                </ol>
+                <h3>The Simplest Way</h3>
+                <ol>
+                  <li>Install All-in-one web server (XAMPP, WAMP, etc)</li>
+                  <li>Done!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/php2.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide5">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Your 1st PHP Code</h2>
+                <p class="text-intro">Cek Versi PHP dan Modul yang Digunakan</p>
+                <ol>
+                  <li>Buat file dengan ekstensi <code>php</code> pada root direktori web server</li>
+                  <li>XAMPP => <code>/htdocs</code></li>
+                  <li>WAMP/LAMP => <code>/www/</code></li>
+                  <li>Manual ? => sesuaikan sendiri</li>
+                  <li>Dalam file PHP tulis script <code>&lt;?php phpinfo(); ?&gt;</code></li>
+                <ol>
+              </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide6">
+          <div class="wrap">
+            <p class="text-subtitle">Pengenalan PHP</p>
+            <h2 class="text-context">Variable dan Konstanta pada PHP</h2>
+            <div class="grid">
+              <div class="column">
+                <h4>Variable</h4>
+                <ol>
+                  <li>Variable pada PHP diawali dengan <em>dollar sign</em> atau <code>$</code></li>
+                  <li>Penamaan variable bersifat <strong>case sensitive</strong></li>
+                  <li>Atauran lazim yang berlaku untuk penamaan variable dalam PHP adalah menggunakan <strong>camelCase</strong> atau dipisah dengan <code>_</code> jika lebih dari satu kata</li>
+                  <li>NAMA VARIABLE TIDAK BOLEH DIAWALI DENGAN ANGKA</li>
+                  <li>NAMA VARIABLE TIDAK BOLEH MENGANDUNG KARAKTER SPASI</li>
+                  <li>Nilai dalam variable dapat diubah</li>
+                  <li>Tipe data dari variable dalam PHP tidak perlu dideklarasikan sebelumnya</li>
+                <ol>
+              </div>
+              <div class="column">
+                <h4>Konstanta</h4>
+                <ol>
+                  <li>Konstanta merupakan nilai variable yang tidak dapat dirubah atau dimodifikasi</li>
+                  <li>Pembuatan konstanta dapat dilakukan dengan cara penambahan keyword <code>const</code> atau penggunaan fungsi <code>define()</code></li>
+                  <li>Contoh dengan <code>const</code> : <code>const kota = "Malang";</code></li>
+                  <li>Contoh dengan <code>define()</code> : <code>define("kota","Malang");</code></li>
+                  <li>Teknik penamaan konstanta dapat mengikuti teknik penamaan variable</li>
+                </ol>
+              </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide7">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Kondisi #1</h2>
+                <p class="text-intro">IF, ELSE, ELSE-IF</p>
+                <ol>
+                  <li>Kondisi dalam PHP dapat dibandingkan dengan menggunakan <code>comparison operators</code>, <code>logical operators</code> atau <code>arithmetic operators</code></li>
+                  <li>Referensi : <a href="http://php.net/manual/en/language.operators.bitwise.php">http://php.net/manual/en/language.operators.bitwise.php</a></li>
+                  <li>Perhatikan contoh disamping!</li>
+                <ol>
+              </div>
+              <div class="column">
+                <figure class="aligncenter">
+                  <img src="../Week 8/static/images/code1.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide8">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Kondisi #1</h2>
+                <h4>Latihan #1</h4>
+                <ol>
+                  <li>Buatlah kode program yang bisa membedakan angka genap dengan angka ganjil. Misalkan variabel $a berisi 50, akan tampil “50 adalah angka genap. Jika $a berisi 7, maka akan tampil “7 adalah angka ganjil”.</li>
+                  <li>Tips : gunakan operator modulus (%)</li>
+                </ol>
+                <br/>
+                <h4>Latihan #2</h4>
+                <p>Buatlah sebuah kode program yang terdiri dari 2 variabel: $a dan $b. Kedua variabel ini berisi angka integer atau float. Bandingkan dinilai keduanya sehingga tampilan akhir adalah salah satu kondisi berikut:</p>
+                <ol>
+                  <li>$a lebih kecil dari $b</li>
+                  <li>$a lebih besar dari $b</li>
+                  <li>$a sama besar dengan $b</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide9">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Kondisi #1</h2>
+                <h4>Latihan #3</h4>
+                <p>Buatlah kode program yang akan memeriksa apakah $username berisi string ”JTI” dan $password berisi string “polinema”. Jika benar, tampilkan pesan: “Username dan Password sesuai, hak akses diberikan”. Jika salah, tampilkan pesan: “Username atau Password tidak sesuai!”.</p>
+                <p>Tips : username dan password KEDUANYA harus sesuai, jika tidak tampilkan pesan : <em>“Username atau Password tidak sesuai!”</em></p>
+                <br/>
+                <h4>Latihan #4</h4>
+                <p>Modifikasi kode dari Latihan #3 sehingga menghasilkan <em>handling</em> untuk kondisi-kondisi berikut :</p>
+                <ol>
+                  <li>Username sesuai, password sesuai: ”Username dan password sesuai, hak akses diberikan”</li>
+                  <li>Username sesuai, password tidak sesuai: ”Username sesuai, password tidak sesuai!”</li>
+                  <li>Username tidak sesuai, password sesuai: ”Username tidak sesuai, password tidak sesuai!”</li>
+                  <li>Username tidak sesuai, password tidak sesuai: “Nama dan Password tidak sesuai!”</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Kondisi #2</h2>
+                <p class="text-intro">Switch-case</p>
+                <ol>
+                  <li>Selain menggunakan IF, ELSE, ELSE-IF, kita juga dapat menggunakan struktur kondisi <code>switch-case</code></li>
+                  <li>Perhatikan contoh disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/code2.png">
+                </figure>
+              </div>
+            </div>  
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Kondisi #2</h2>
+                <h4 class="text-intro">Latihan #5</h4>
+                <p>
+                    Buatlah kode program yang menampilkan string nama hari: “Hari Senin”, “Hari Selasa”, sampai dengan “Hari Minggu”, berdasarkan variabel $hari yang bisa diisi dengan angka integer 1-7. Gunakan struktur <code>switch-case</code> pada kasus ini.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Perulangan</h2>
+                <p class="text-intro">For Loop</p>
+                <ol>
+                  <li>Struktur <code>for loop</code> dapat dilihat pada contoh disamping</li>
+                </ol>   
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/code3.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Perulangan #2</h2>
+                <h4>While Loop</h4>
+                <ol>
+                  <li>Struktur while loop dapat dilihat pada contoh disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/code4.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Perulangan #3</h2>
+                <h4>Foreach Loop - Its for array</h4>
+                <ol>
+                  <li><code>Foreach</code> loop biasanya digunakan untuk melakukan looping pada elemen-elemen didalam sebuah</li>
+                  <li>Perhatikan contoh struktur disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/code5.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Struktur Perulangan #4</h2>
+                <h4>Foreach Loop - Its for assosiative array</h4>
+                <ol>
+                  <li>Untuk assosiative array, atau array dengan metode key-value, terdapat stuktur khusus dalam <code>foreach</code></li>
+                  <li>Perhatikan contoh struktur disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/code6.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Fungsi #1</h2>
+                <h4>Better break it down into pieces</h4>
+                <ol>
+                  <li>Fungsi sangat bermanfaat untuk memecah kode kedalam bagian kecil (fungsi) agar lebih mudah untuk dilakukan maintenance</li>
+                  <li>Sama seperti bahasa pemograman yang lain, fungsi (method) dalam PHP dapat bersifat <em>void</em> atau memiliki nilai kembalian (return value)</li>
+                  <li>Perhatikan contoh struktur fungsi void disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/code7.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-subtitle">Pengenalan PHP</p>
+                <h2 class="text-context">Fungsi #2</h2>
+                <h4>What about function with a return value ?</h4>
+                <ol>
+                  <li>Perhatikan contoh struktur fungsi dengan nilai kembalian disamping!</li>
+                </ol>
+              </div>
+              <div class="column">
+                <figure>
+                  <img src="../Week 8/static/images/code8.png">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap aligncenter">
+              <h1 style="font-size:7em">HTML + PHP</h1>
+              <br/><br/>
+              <p class="text-intro">Lets mix it together (?)</p>
+          </div>
+        </section>
+
+        <section class="bg-apple" id="slide33">
+          <span class="aligncenter text-intro" style="font-size:7em">Pertanyaan ?</span>
+        </section>
+
+      </article>
+
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../Week 8/static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- Script for Week 8 -->
+    <script>
+      $(document).ready(function(){
+        //Slider
+        $("#slideShow").bxSlider({
+          mode: 'fade',
+          slideWidth: 3500
+        });
+
+        //Live input
+        $("#txtInput").keyup(function(){
+          var value = $(this).val();
+          $("#result").text(value);
+        }).keyup();
+      });
+
+      function displayVals() {
+        var singleValues = $( "#singleSel" ).val();
+        var multipleValues = $( "#multiSel" ).val() || [];
+        $( "#selectResult" ).html( "<b>Single:</b> " + singleValues +
+          "<br/><b>Multiple:</b> " + multipleValues.join( ", " ) );
+      }
+ 
+      $( "select" ).change( displayVals );
+      displayVals();
+
+      $("#alertBtn").click(function(){
+        alert("Contoh fungsi event .click()");
+      });
+
+      // Wait for the DOM to be ready
+      $(function() {
+        // Initialize form validation on the registration form.
+        // It has the name attribute "registration"
+        $("form[name='registration']").validate({
+          // Specify validation rules
+          rules: {
+            // The key name on the left side is the name attribute
+            // of an input field. Validation rules are defined
+            // on the right side
+            firstname: "required",
+            lastname: "required",
+            email: {
+              required: true,
+              // Specify that email should be validated
+              // by the built-in "email" rule
+              email: true
+            },
+            password: {
+              required: true,
+              minlength: 5
+            }
+          },
+          // Specify validation error messages
+          messages: {
+            firstname: "Please enter your firstname",
+            lastname: "Please enter your lastname",
+            password: {
+              required: "Please provide a password",
+              minlength: "Your password must be at least 5 characters long"
+            },
+            email: "Please enter a valid email address"
+          },
+          // Make sure the form is submitted to the destination defined
+          // in the "action" attribute of the form when valid
+          submitHandler: function(form) {
+            form.submit();
+          }
+        });
+      });
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../Week 8/static/js/svg-icons.js"></script>
+
+  </body>
+</html>
